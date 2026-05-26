@@ -1367,7 +1367,7 @@ const writingCurriculum = [
       intro: "IELTS Writing is 60 minutes with two tasks. Task 1 requires at least 150 words in 20 minutes; Task 2 requires at least 250 words in 40 minutes. Task 2 carries double the marks. Both tasks are assessed on four criteria, each worth 25%.",
       sections: [
         { heading: "The Four Assessment Criteria", body: "Every task is marked on: (1) Task Achievement/Response — did you fully address the task? (2) Coherence & Cohesion — is your writing logically organised and well-connected? (3) Lexical Resource — how wide and precise is your vocabulary? (4) Grammatical Range & Accuracy — do you use varied grammar correctly? Each criterion contributes exactly 25% to the Writing band score." },
-        { heading: "Academic vs General Training", body: "In Academic IELTS, Task 1 asks you to describe visual data: graphs, charts, diagrams, maps, or processes. In General Training, Task 1 is a letter. Task 2 is an essay in BOTH versions. GT essays allow a slightly less formal style, but the assessment criteria and standards remain the same." },
+        { heading: "The Two Writing Tasks (Academic)", body: "In Academic IELTS, Task 1 asks you to describe visual data: graphs, charts, tables, diagrams, maps, or processes, in at least 150 words. Task 2 is a formal essay of at least 250 words responding to a point of view, argument, or problem. Both are assessed on the same four criteria, and Task 2 carries double the weight of Task 1." },
         { heading: "Time Management is Critical", body: "Spend 20 minutes on Task 1 and 40 minutes on Task 2. Never exceed 22 minutes on Task 1 — the marks do not justify the time lost on Task 2. If you run out of time, prioritise Task 2. A complete Task 2 with a brief Task 1 will always outscore the reverse, given Task 2's double weighting." }
       ],
       tips: [
@@ -1394,24 +1394,6 @@ const writingCurriculum = [
         "Build a vocabulary bank of trend language: rose sharply, fell gradually, peaked at, levelled off, fluctuated, remained stable, surged, plummeted.",
         "For comparisons, use: while, whereas, compared to/with, in contrast, by contrast, similarly, both, neither.",
         "NEVER state an opinion or reason WHY trends occurred — just report what the data shows."
-      ]
-    }
-  },
-  {
-    id: "w-task1-gt", icon: "✉️", title: "Task 1: General Training — Letters", subtitle: "Write with appropriate register", color: "#7CB87C",
-    content: {
-      intro: "GT Task 1 asks you to write a letter of at least 150 words addressing three bullet points. The letter may be formal, semi-formal, or informal. Your register must be consistent from the first word to the last. Addressing all three bullet points adequately is essential for a strong Task Achievement score.",
-      sections: [
-        { heading: "Three Letter Types", body: "Formal: written to an unknown authority (company, council, editor). Use 'Dear Sir/Madam', 'Yours faithfully', formal vocabulary, no contractions. Semi-formal: to a known professional contact (landlord, colleague). Use 'Dear Mr/Ms [Name]', 'Yours sincerely', polite but warmer tone. Informal: to a close friend or family member. Use 'Dear [First name]', 'Best wishes/Take care', contractions, conversational language." },
-        { heading: "Covering All Three Bullet Points", body: "IELTS gives you three bullet points — each must be addressed with clear development. A common mistake is writing extensively about two points and barely mentioning the third. Read all three before planning and allocate roughly equal space. Each bullet point must receive at least a full, developed sentence — a passing mention is not sufficient." },
-        { heading: "Register Consistency", body: "Mixing registers within one letter is penalised under Coherence & Cohesion. A formal letter should not include 'I was really annoyed' — write 'I was deeply dissatisfied'. An informal letter should not open with 'I am writing to inform you' — write 'I'm writing because'. Every vocabulary choice must match your established register, from salutation to sign-off." }
-      ],
-      tips: [
-        "Identify the letter type from the task prompt FIRST — before writing a single word. It determines every vocabulary choice.",
-        "Your opening sentence must state your purpose clearly: 'I am writing to complain about...' / 'I wanted to let you know...'",
-        "Formal letters never use contractions (I'm, don't, it's) — always write the full forms.",
-        "Salutation/closing pairs: 'Dear Sir/Madam' → 'Yours faithfully'; 'Dear Mr/Ms [Name]' → 'Yours sincerely'; informal → 'Best wishes/Take care'.",
-        "End with a forward-looking line before your sign-off: 'I look forward to hearing from you at your earliest convenience.'"
       ]
     }
   },
@@ -1567,17 +1549,6 @@ const writingExercises = {
       { id: 3, question: "Which is an appropriate OVERVIEW for a pie chart: coal 45%, gas 30%, renewables 15%, nuclear 10%?", options: ["Overall, coal was 45%, gas 30%, renewables 15%, and nuclear 10%.", "Overall, coal was the dominant energy source, while nuclear made the smallest contribution.", "In conclusion, renewables represent the most promising energy category.", "The chart illustrates that four types of energy were used."], correct: 1, explanation: "A good overview captures significant features WITHOUT figures — those go in detail paragraphs. Option B identifies the dominant trend at a big-picture level." },
       { id: 4, question: "When describing a process diagram, which tense and voice is most appropriate?", options: ["First person active: 'First, I mix the ingredients'", "Present simple passive: 'The ingredients are mixed'", "Future tense: 'The ingredients will be mixed'", "Present perfect: 'The ingredients have been mixed'"], correct: 1, explanation: "Process diagrams use present simple passive: 'the material is heated', 'the water is filtered'. This is standard academic register for describing processes." },
       { id: 5, question: "You are describing data for five countries. The best organisational strategy is:", options: ["One paragraph per country (five paragraphs)", "Group countries with similar trends or highest/lowest values", "List countries alphabetically", "Describe only the country with the highest value"], correct: 1, explanation: "Grouping by trend creates a more analytical, coherent response than listing each country separately." }
-    ]
-  },
-  "w-task1-gt": {
-    type: "quiz", title: "Letter Writing — Register & Format",
-    description: "Identify appropriate register and language for different IELTS letter types.",
-    questions: [
-      { id: 1, question: "You are writing to a company's customer service about a faulty product. What is the correct salutation?", options: ["'Dear John'", "'Dear Sir/Madam'", "'Dear Customer Services'", "'Hi there'"], correct: 1, explanation: "A complaint to an unknown company representative is a formal letter. Use 'Dear Sir/Madam' and close with 'Yours faithfully'." },
-      { id: 2, question: "Which salutation/closing pair is CORRECTLY matched?", options: ["'Dear Mr Johnson' → 'Yours faithfully'", "'Dear Sir/Madam' → 'Yours sincerely'", "'Dear Sarah' → 'Yours sincerely'", "'Dear Ms Williams' → 'Yours sincerely'"], correct: 3, explanation: "'Dear Sir/Madam' (unknown) → 'Yours faithfully'. 'Dear [Title Surname]' → 'Yours sincerely'. Option D is a correctly matched semi-formal pair." },
-      { id: 3, question: "The task asks you to write about three bullet points. You address two fully but barely mention the third. What is the likely impact?", options: ["No impact — quality of the first two compensates", "Minor impact only", "Significant impact — all three must be adequately covered for a good Task Achievement score", "You will automatically fail"], correct: 2, explanation: "All three bullet points must be clearly and adequately developed. Neglecting one causes significant Task Achievement penalisation." },
-      { id: 4, question: "Which sentence is appropriate for an INFORMAL letter to a close friend?", options: ["'I am writing to inform you of my upcoming relocation.'", "'I wanted to let you know that I'm moving soon!'", "'Please be advised that I shall be relocating in the near future.'", "'This letter serves to notify you of my change of residence.'"], correct: 1, explanation: "Informal letters use natural, conversational language with contractions. Options A, C, and D are far too formal for an informal letter." },
-      { id: 5, question: "In a formal letter, which should you AVOID?", options: ["Passive voice constructions", "Formal multi-syllabic vocabulary", "Contractions such as I'm, don't, it's", "Specific details supporting your complaint"], correct: 2, explanation: "Contractions are informal and must not appear in formal letters. Write 'I am', 'do not', 'it is'." }
     ]
   },
   "w-task2-types": {
@@ -2096,13 +2067,1943 @@ Return this exact JSON structure:
   return null;
 }
 
+
+// ============================================================
+// LISTENING CURRICULUM DATA
+// ============================================================
+const listeningCurriculum = [
+  {
+    id: "l-overview", icon: "📋", title: "Overview & Format", subtitle: "Know the test structure", color: "#C8A951",
+    content: {
+      intro: "The IELTS Listening test is approximately 30 minutes long with 40 questions across 4 recorded sections. You hear each recording ONCE only. On paper-based tests you get 10 extra minutes to transfer answers; on computer-based tests you get 2 minutes to check. Every correct answer is worth 1 mark, and the Listening test is identical for Academic and General Training candidates.",
+      sections: [
+        { heading: "Four Parts, Increasing Difficulty", body: "Part 1: a conversation between two people in an everyday social context (e.g. booking accommodation). Part 2: a monologue in an everyday context (e.g. a talk about local facilities). Part 3: a conversation between up to four people in an educational setting (e.g. students and a tutor). Part 4: a monologue on an academic subject (e.g. a university lecture). The difficulty rises from Part 1 to Part 4." },
+        { heading: "Heard Only Once", body: "Unlike Reading, you cannot go back. The audio plays continuously and you must answer as you listen. This is why prediction and reading questions in advance are essential skills. If you miss an answer, mark your best guess and immediately refocus on the next question — dwelling on a missed answer causes you to miss several more." },
+        { heading: "Scoring & Band Conversion", body: "40 questions, 1 mark each. Approximate band scores: 39–40 = Band 9, 37–38 = Band 8.5, 35–36 = Band 8, 32–34 = Band 7.5, 30–31 = Band 7, 26–29 = Band 6.5, 23–25 = Band 6, 18–22 = Band 5.5, 16–17 = Band 5. Spelling and grammar must be correct — a correctly heard but misspelled answer is marked wrong." }
+      ],
+      tips: [
+        "You hear each recording only ONCE — there are no repeats, so full concentration is essential throughout.",
+        "Use the time before each section to read the questions and predict what kind of answer is needed.",
+        "Transfer answers carefully (paper test) — check spelling and that answers align with the correct question numbers.",
+        "Never leave a blank — there's no penalty for wrong answers, so always guess if unsure.",
+        "Answers appear in the SAME ORDER as the recording — if you're searching for Q5's answer but hear Q6's, you've missed Q5; move on."
+      ]
+    }
+  },
+  {
+    id: "l-parts", icon: "🎧", title: "The Four Parts", subtitle: "What to expect in each section", color: "#5B8DB8",
+    content: {
+      intro: "Each of the four parts has a distinct context, speaker setup, and typical question types. Knowing what's coming lets you prepare your listening focus before the audio even begins. Parts 1 and 2 deal with everyday social situations; Parts 3 and 4 are set in academic and educational contexts.",
+      sections: [
+        { heading: "Part 1 — Social Conversation (Q1–10)", body: "Two speakers in a transactional, everyday situation: booking a hotel, enrolling in a course, making an enquiry. Usually tests form completion with names, dates, phone numbers, addresses, and prices. An example answer is often given at the start. This is the easiest section — secure these 10 marks with careful attention to spelling and numbers." },
+        { heading: "Part 2 — Social Monologue (Q11–20)", body: "One speaker giving information in an everyday context: a tour guide describing facilities, a manager explaining new procedures, a radio segment about an event. Common question types: multiple choice, matching, and map or plan labelling. Listen for descriptive and directional language as the speaker moves through topics or locations." },
+        { heading: "Parts 3 & 4 — Academic Contexts (Q21–40)", body: "Part 3 is a discussion between two to four speakers (typically students and a tutor) about an assignment or academic topic. It tests opinions, agreement/disagreement, and matching. Part 4 is an academic lecture by a single speaker with NO break in the middle — usually note or summary completion. Part 4 is the hardest: dense academic vocabulary and a continuous flow." }
+      ],
+      tips: [
+        "Part 1 always has an example answer played first — use it to tune into the speakers' voices and accents.",
+        "In Part 2, map/plan labelling is common — orient yourself using the starting point and compass directions before the audio.",
+        "Part 3 tests opinions — listen for who says what, and for agreement/disagreement between speakers.",
+        "Part 4 has NO pause in the middle — read all questions beforehand because you won't get a break to catch up.",
+        "Difficulty rises across parts, so don't panic if Part 4 feels hard — everyone finds it the most challenging."
+      ]
+    }
+  },
+  {
+    id: "l-strategies", icon: "🧠", title: "Core Listening Strategies", subtitle: "Predict, focus, recover", color: "#7CB87C",
+    content: {
+      intro: "Strong IELTS listeners don't just hear — they anticipate. Because the audio plays once, success depends on reading questions in advance, predicting answers, and recovering instantly when you miss something. These three habits separate Band 7+ listeners from the rest.",
+      sections: [
+        { heading: "Predict Before You Listen", body: "Use the pause before each section to read the questions and predict the type of answer needed. For a gap after 'The tour costs £___', you know a number/price is coming. For 'The museum is closed on ___', a day is expected. Predicting the grammatical form (noun, number, verb) and meaning primes your brain to catch the answer the instant it's spoken." },
+        { heading: "Listen for Signpost Language", body: "Speakers signal what's coming with transition words: 'firstly', 'moving on to', 'however', 'the main reason', 'finally'. These guide you through the structure and warn you when an answer is approaching. In Part 4 lectures especially, signposts ('Let's turn now to...') tell you the topic is shifting and a new answer is imminent." },
+        { heading: "Recover From Missed Answers", body: "If you miss an answer, DON'T freeze. Mark a guess, then immediately jump to the next question. The biggest score-killer is losing concentration after one missed answer and then missing the next three. Because answers come in order, listen for the keywords of the NEXT question to find your place again instantly." }
+      ],
+      tips: [
+        "Read ahead: while one section's audio is ending, scan the next section's questions if you've finished answering.",
+        "Underline keywords in each question to know exactly what to listen for.",
+        "Predict the answer TYPE (number, name, place, verb) before listening — it sharpens your focus.",
+        "Beware of 'distractors' — speakers often state a wrong answer first, then correct it ('Actually, make that Thursday').",
+        "If you miss one, let it go instantly and lock onto the next question's keywords — never chase a lost answer."
+      ]
+    }
+  },
+  {
+    id: "l-form", icon: "📝", title: "Form, Note & Table Completion", subtitle: "Capture details accurately", color: "#B87CB8",
+    content: {
+      intro: "Completion questions ask you to fill gaps in a form, set of notes, table, or flow-chart using words from the recording. A word limit always applies (e.g. 'NO MORE THAN TWO WORDS AND/OR A NUMBER'). These dominate Part 1 and Part 4, and reward accurate spelling and precise listening.",
+      sections: [
+        { heading: "Form Completion (Part 1)", body: "Forms collect personal and transactional details: names (often spelled out letter by letter), addresses, phone numbers, dates, times, and prices. Listen carefully when names are spelled — and watch for self-correction ('That's B-R-O-W-N... sorry, B-R-A-U-N'). The form's existing labels tell you exactly what each gap needs." },
+        { heading: "Note & Table Completion", body: "Notes summarise a talk in shortened form; tables organise information into rows and columns for comparison. Use the headings and surrounding words to predict each gap. In tables, read across rows and down columns to understand what category each blank belongs to before the audio reaches it." },
+        { heading: "Obey the Word Limit Strictly", body: "If the instruction says 'NO MORE THAN TWO WORDS', writing three words is automatically wrong — even if all are correct. Numbers usually count separately ('AND/OR A NUMBER'). Copy words exactly as heard; do not change tense or plural forms. Articles (a, the) count toward your word limit." }
+      ],
+      tips: [
+        "Check the word limit FIRST and write the exact number of words allowed — never exceed it.",
+        "For spelled-out names, write each letter as you hear it; double-check common confusions (M/N, B/P, S/F).",
+        "Listen for self-corrections — the SECOND piece of information is usually the correct answer.",
+        "Predict each gap's word type from the surrounding text before the audio reaches it.",
+        "Common number traps: 'fifteen' (15) vs 'fifty' (50), 'thirteen' (13) vs 'thirty' (30) — listen to the stress."
+      ]
+    }
+  },
+  {
+    id: "l-mcq", icon: "🎯", title: "Multiple Choice", subtitle: "Beat the distractors", color: "#B87C7C",
+    content: {
+      intro: "Multiple choice questions give you options (A/B/C, sometimes more) and ask you to choose the correct one(s). They appear most often in Parts 2 and 3. IELTS deliberately mentions all the options in the audio to test whether you can identify the correct one — careful listening for the precise meaning is essential.",
+      sections: [
+        { heading: "All Options Are Mentioned", body: "The recording usually refers to every option, not just the right one. The speaker might mention A and B before confirming C is correct. Don't pick an answer just because you heard the word — listen for what is actually CONFIRMED versus what is rejected or merely discussed." },
+        { heading: "Read Options Before Listening", body: "In the pause before the section, read the question stem and all options. Underline the key difference between them. This way, when the audio plays, you're listening for which specific option the speaker confirms rather than processing all options for the first time mid-audio." },
+        { heading: "Multiple-Answer Questions", body: "Some questions ask you to choose TWO or THREE answers from a longer list (e.g. 'Which TWO facilities are free?'). The correct answers can be mentioned anywhere in that part of the recording, not necessarily together. Track each option and tick the ones explicitly confirmed by the speaker." }
+      ],
+      tips: [
+        "Read the stem and ALL options during the pause — know the differences before the audio starts.",
+        "Beware: hearing a word from an option doesn't make it correct — listen for confirmation or rejection.",
+        "Watch for paraphrasing — the correct option is often expressed in different words than the audio uses.",
+        "For 'choose TWO/THREE' questions, the answers may be scattered — track every option throughout.",
+        "Eliminate options the speaker clearly rejects to narrow down your choice."
+      ]
+    }
+  },
+  {
+    id: "l-matching", icon: "🔗", title: "Matching", subtitle: "Connect items to categories", color: "#7CB8B8",
+    content: {
+      intro: "Matching questions ask you to match a list of items (e.g. people, places, dates) to a set of options (e.g. opinions, features, descriptions). They appear most often in Part 3 (matching opinions to speakers) and Part 2. Tracking who says what, in order, is the key skill.",
+      sections: [
+        { heading: "How Matching Works", body: "You're given a numbered list of items and a lettered list of options. Each item matches one option. Sometimes options can be used more than once; sometimes there are more options than items. Always read the instructions to know whether options repeat. The numbered items follow the order of the recording." },
+        { heading: "Track the Order", body: "The questions follow the order in which information appears in the audio. So once you've matched item 1, listen for item 2 next — don't jump around. In Part 3 discussions, the speakers will be referred to by name, so keep each speaker's name clearly in mind to attribute opinions correctly." },
+        { heading: "Pre-read the Options", body: "Reading the lettered options in advance is crucial — there are often more of them than items, and they may be paraphrased in the audio. Familiarise yourself with all options so you can quickly recognise which one matches when the speaker expresses that idea, even in different words." }
+      ],
+      tips: [
+        "Check whether options can be used more than once — the instructions will tell you.",
+        "Items follow the recording's order, so move sequentially and don't skip ahead.",
+        "In Part 3, keep speakers' names firmly in mind to attribute each opinion correctly.",
+        "Options are usually paraphrased — listen for the MEANING, not exact word matches.",
+        "If you miss one match, guess and move on — chasing it risks missing the next several."
+      ]
+    }
+  },
+  {
+    id: "l-map", icon: "🗺️", title: "Map, Plan & Diagram Labelling", subtitle: "Follow spatial directions", color: "#B8A47C",
+    content: {
+      intro: "These questions show a map, building plan, or diagram and ask you to label parts using the recording. They appear most often in Part 2. Success depends on orienting yourself first and then following the speaker's directional and positional language precisely.",
+      sections: [
+        { heading: "Orient Yourself First", body: "Before the audio, study the map/plan: find the entrance, the compass (north/south), any labelled landmarks, and the scale. Identify your starting point — the speaker almost always begins a tour or description from a fixed reference like the main entrance or 'where we are now'. This anchors everything that follows." },
+        { heading: "Follow Directional Language", body: "Listen for prepositions and directions: 'opposite', 'next to', 'between', 'on your left', 'at the far end', 'go past', 'in the corner', 'adjacent to'. Trace the route on the map with your finger or eyes as the speaker talks. Each labelled location is described relative to something you already know." },
+        { heading: "Diagram & Process Labelling", body: "For object diagrams (a machine, a piece of equipment), labels are usually nouns naming parts. The speaker describes the diagram in a logical sequence — often top to bottom or in the order of a process. Use any pre-printed labels as anchors to locate where the speaker is referring." }
+      ],
+      tips: [
+        "Locate the starting point and compass directions BEFORE the audio begins.",
+        "Trace the route with your finger as the speaker gives directions — stay with them in real time.",
+        "Master location language: opposite, adjacent to, between, at the end of, to the left/right of.",
+        "Use labelled landmarks already on the map as reference anchors for the unlabelled ones.",
+        "If you lose track, listen for the next clearly named landmark to re-locate yourself on the map."
+      ]
+    }
+  },
+  {
+    id: "l-sentence", icon: "✍️", title: "Sentence Completion & Short Answer", subtitle: "Precise words, strict limits", color: "#8B7CB8",
+    content: {
+      intro: "Sentence completion gives you incomplete sentences to finish with words from the recording. Short-answer questions ask direct questions (e.g. 'What time does the library close?'). Both require you to listen for specific information and obey a strict word limit. These often appear in Parts 2, 3, and 4.",
+      sections: [
+        { heading: "Sentence Completion", body: "Each sentence summarises a point from the audio with a gap to fill. The words before and after the gap are your cue — they signal exactly what information to listen for and its grammatical form. The sentence must be grammatically correct and factually accurate once completed. Answers come in the recording's order." },
+        { heading: "Short-Answer Questions", body: "Direct questions answered with specific information: 'How many students attended?' (a number), 'What does the speaker recommend bringing?' (a thing). Let the question word guide your listening focus. The word limit still applies, so give only the essential words — extra words can make a correct answer wrong." },
+        { heading: "Predict the Grammar and Meaning", body: "Before listening, decide what type of word fills each gap. After 'the project was funded by ___' you expect an organisation or person. After 'students must submit work by ___' you expect a date or time. Predicting both grammar and meaning lets you catch the answer instantly when it's spoken." }
+      ],
+      tips: [
+        "Always obey the word limit — 'NO MORE THAN TWO WORDS AND/OR A NUMBER' is the most common instruction.",
+        "Read the words around the gap to predict the answer's type and meaning before listening.",
+        "Write the exact words you hear — don't paraphrase or change the form.",
+        "For short answers, the question word (who/what/when/how many) tells you the answer type.",
+        "Spelling counts — a correctly heard but misspelled answer is marked wrong."
+      ]
+    }
+  },
+  {
+    id: "l-signpost", icon: "🚦", title: "Signposting & Distractors", subtitle: "Read the speaker's signals", color: "#C85B5B",
+    content: {
+      intro: "Speakers in IELTS Listening use signposting language to guide listeners and frequently use distractors to test whether you're truly following the meaning. Recognising these patterns is one of the most powerful ways to lift your score, especially in Parts 3 and 4.",
+      sections: [
+        { heading: "Signposting Language", body: "Signposts tell you where the talk is going. Sequence: 'firstly', 'then', 'finally'. Addition: 'moreover', 'in addition'. Contrast: 'however', 'on the other hand'. Cause: 'because', 'as a result'. Emphasis: 'the key point is', 'most importantly'. Topic shift: 'moving on to', 'turning now to'. These warn you an answer is coming and how ideas connect." },
+        { heading: "Distractors — The Classic Trap", body: "A distractor is information that seems like the answer but is then changed or rejected. Example: 'The meeting's on Monday — oh wait, it's been moved to Wednesday.' The answer is Wednesday, not Monday. Speakers often state one thing, then correct it with 'actually', 'sorry', 'in fact', or 'no, wait'. Always listen to the END of the statement." },
+        { heading: "Negation and Correction Words", body: "Listen hard for words that reverse meaning: 'not', 'instead of', 'rather than', 'although', 'but', 'actually', 'on second thoughts'. These signal that what was just said is being qualified or overturned. The information AFTER these words is usually the correct answer, not what came before." }
+      ],
+      tips: [
+        "Treat 'actually', 'sorry', 'in fact', 'wait' as alarm bells — a correction (the real answer) is coming.",
+        "Don't write an answer the instant you hear a match — wait to confirm it isn't corrected a moment later.",
+        "Signpost words ('moving on', 'finally') tell you a new answer is approaching — refocus when you hear them.",
+        "Listen for negation ('not', 'rather than') which flips the meaning of a statement.",
+        "In Part 3, agreement/disagreement language ('I see your point, but...') signals whose opinion is final."
+      ]
+    }
+  },
+  {
+    id: "l-spelling", icon: "🔤", title: "Spelling, Numbers & Common Traps", subtitle: "Don't lose easy marks", color: "#B8B87C",
+    content: {
+      intro: "Many candidates lose marks not from mishearing but from incorrect spelling, misheard numbers, or formatting errors when transferring answers. Because the answer must be exactly right, mastering these mechanical details can lift your score by a full band — these are the easiest marks to protect.",
+      sections: [
+        { heading: "Spelling Must Be Correct", body: "An answer that is correct but misspelled is marked WRONG. Practise spelling common IELTS vocabulary: accommodation, restaurant, Wednesday, February, receipt, library, business. When a name or word is spelled out in the audio, write each letter precisely. Both British and American spellings are accepted (e.g. 'colour'/'color')." },
+        { heading: "Numbers, Dates & Times", body: "Listen carefully to distinguish 'thirteen' (13) from 'thirty' (30) — the stress differs. Phone numbers are read digit by digit; 'double four' means '44', 'oh' or 'zero' means 0. Dates can be said many ways ('the third of May' = 3 May). Times: '8:15' may be 'quarter past eight' or 'eight fifteen'. Write numbers as digits to save time." },
+        { heading: "Formatting & Transfer Errors", body: "Capitalise proper nouns (names, places, days). Don't add information not asked for. On paper tests, transfer answers carefully in the 10-minute window — align each answer with its question number and re-check spelling. A single misaligned answer can cascade into several wrong marks. Write clearly so the marker can read it." }
+      ],
+      tips: [
+        "Memorise spellings of frequently tested words: accommodation, Wednesday, February, receipt, restaurant.",
+        "Learn number traps: thirteen/thirty, fourteen/forty, fifteen/fifty, sixteen/sixty — the stress reveals which.",
+        "'Double' before a digit means it repeats: 'double seven' = 77; 'oh' usually means zero.",
+        "Capitalise proper nouns and days of the week — formatting errors can cost marks.",
+        "On the paper test, use the 10-minute transfer window to double-check spelling and answer alignment."
+      ]
+    }
+  },
+  {
+    id: "l-band", icon: "🎯", title: "Band Scores & Final Tips", subtitle: "Convert raw marks to bands", color: "#5B8DB8",
+    content: {
+      intro: "Understanding how raw scores convert to band scores helps you set realistic targets and know how many questions you need to answer correctly. The Listening test offers some of the most achievable marks in IELTS — with good technique, Parts 1 and 2 alone can secure a solid foundation.",
+      sections: [
+        { heading: "Raw Score to Band Conversion", body: "Out of 40: 39–40 = Band 9.0, 37–38 = Band 8.5, 35–36 = Band 8.0, 32–34 = Band 7.5, 30–31 = Band 7.0, 26–29 = Band 6.5, 23–25 = Band 6.0, 18–22 = Band 5.5, 16–17 = Band 5.0. Note these are approximate — exact boundaries vary slightly between test versions. To reach Band 7, aim to get around 30 of 40 correct." },
+        { heading: "Where to Win Marks", body: "Parts 1 and 2 are the most accessible — secure these 20 marks with careful attention to form-filling, spelling, and numbers. Parts 3 and 4 are harder, but strong prediction and signpost-tracking can lift your performance significantly. Don't sacrifice easy Part 1 marks by being careless; they count exactly the same as hard Part 4 marks." },
+        { heading: "On Test Day", body: "Arrive focused — Listening is usually the first test. Read questions ahead during every pause. Stay calm if you miss an answer; guess and move on. Use headphones (computer-based) or check audio quality (paper-based) before the test begins. In the final review window, prioritise spelling checks and ensuring no answer is left blank." }
+      ],
+      tips: [
+        "Target ~30/40 correct for Band 7; ~35/40 for Band 8 — know your goal before test day.",
+        "Protect easy Part 1 and 2 marks — they count as much as the hard ones in Part 4.",
+        "Practise with a variety of accents (British, Australian, American, Canadian) — IELTS uses them all.",
+        "Always read questions ahead during pauses — never sit idle while waiting for audio.",
+        "Never leave a blank — an unanswered question is a guaranteed zero, while a guess might be right."
+      ]
+    }
+  }
+];
+
+// ============================================================
+// LISTENING EXERCISES DATA
+// (audio exercises use the browser SpeechSynthesis API)
+// ============================================================
+const listeningExercises = {
+  "l-overview": {
+    type: "quiz", title: "Format & Rules Quiz",
+    description: "Test your knowledge of the IELTS Listening test structure and rules.",
+    questions: [
+      { id: 1, question: "How many times do you hear each recording in the IELTS Listening test?", options: ["As many times as you want", "Twice", "Once only", "Three times"], correct: 2, explanation: "Each recording is played ONCE only. This is why prediction and reading questions in advance are critical skills." },
+      { id: 2, question: "How many questions are there in total?", options: ["30", "40", "50", "60"], correct: 1, explanation: "There are 40 questions across 4 sections, each worth 1 mark, for a total of 40 marks." },
+      { id: 3, question: "What happens if your answer is correct but misspelled?", options: ["It is accepted", "It is marked wrong", "Half a mark is awarded", "Only the first letter matters"], correct: 1, explanation: "Spelling must be correct. A correctly heard but misspelled answer is marked wrong, so accurate spelling is essential." },
+      { id: 4, question: "In what order do the answers appear relative to the recording?", options: ["Random order", "Reverse order", "The same order as the recording", "Alphabetical order"], correct: 2, explanation: "Answers follow the same order as the recording. If you hear information for a later question, you've likely missed an earlier one — move on." },
+      { id: 5, question: "Is the Listening test different for Academic and General Training candidates?", options: ["Yes, completely different", "No, it is identical for both", "Only Part 4 differs", "Academic has more questions"], correct: 1, explanation: "The Listening test is exactly the same for Academic and General Training candidates — only Reading and Writing differ between the two." }
+    ]
+  },
+  "l-parts": {
+    type: "quiz", title: "The Four Parts Quiz",
+    description: "Identify the context and characteristics of each listening section.",
+    questions: [
+      { id: 1, question: "Part 1 of the Listening test typically features:", options: ["An academic lecture", "A conversation in an everyday social context", "A discussion between four students", "A radio news broadcast"], correct: 1, explanation: "Part 1 is a conversation between two people in an everyday social context, such as booking accommodation or making an enquiry." },
+      { id: 2, question: "Which part is a monologue on an academic subject, like a university lecture?", options: ["Part 1", "Part 2", "Part 3", "Part 4"], correct: 3, explanation: "Part 4 is an academic monologue (lecture) by a single speaker, with no break in the middle. It is generally the most difficult section." },
+      { id: 3, question: "Part 3 usually involves:", options: ["One person describing local facilities", "A conversation between up to four people in an educational setting", "An automated phone message", "A solo academic lecture"], correct: 1, explanation: "Part 3 is a discussion among up to four speakers (often students and a tutor) in an educational or training context." },
+      { id: 4, question: "Which question type is most common in Part 2?", options: ["Essay writing", "Map or plan labelling", "Translation", "True/False/Not Given"], correct: 1, explanation: "Part 2 (a social monologue, e.g. a tour) frequently includes map/plan labelling, as well as multiple choice and matching." },
+      { id: 5, question: "What is a key challenge specific to Part 4?", options: ["It is played three times", "There is no pause in the middle", "It has only two questions", "It is in a foreign language"], correct: 1, explanation: "Part 4 plays continuously with no break in the middle, so you must read all questions beforehand — there's no chance to catch up midway." }
+    ]
+  },
+  "l-strategies": {
+    type: "quiz", title: "Listening Strategy Quiz",
+    description: "Test your understanding of prediction, signposting, and recovery techniques.",
+    questions: [
+      { id: 1, question: "What is the single most important thing to do during the pause before each section?", options: ["Close your eyes and relax", "Read the questions and predict the answers", "Write your name on the answer sheet", "Review the previous section"], correct: 1, explanation: "Use every pause to read upcoming questions and predict answer types. This primes you to catch answers the moment they're spoken." },
+      { id: 2, question: "You miss the answer to question 12. What should you do?", options: ["Stop and wait for it to repeat", "Mark a guess and immediately focus on question 13", "Go back to question 11", "Leave both 12 and 13 blank"], correct: 1, explanation: "Never freeze. Mark a guess and lock onto the next question's keywords. Dwelling on a missed answer causes you to miss several more." },
+      { id: 3, question: "The speaker says: 'The class is on Tuesday — actually, let me check — yes, it's Thursday.' The answer is:", options: ["Tuesday", "Thursday", "Both days", "Neither"], correct: 1, explanation: "This is a distractor. The word 'actually' signals a correction. The final, confirmed answer is Thursday, not the first-mentioned Tuesday." },
+      { id: 4, question: "Why is predicting the grammatical form of an answer useful?", options: ["It impresses the examiner", "It helps you catch the right answer instantly when it's spoken", "It is required by the rules", "It changes your band score directly"], correct: 1, explanation: "Knowing whether you need a number, noun, or verb sharpens your focus so you recognise the answer immediately as it's said." },
+      { id: 5, question: "Signpost words like 'moving on to' and 'finally' tell you:", options: ["The recording is about to repeat", "A topic shift is happening and a new answer may be approaching", "You should stop listening", "The speaker has made a mistake"], correct: 1, explanation: "Signposts guide you through the talk's structure and warn you when the topic is changing and a new answer is imminent." }
+    ]
+  },
+  "l-form": {
+    type: "audio", title: "Listening Practice: Form Completion",
+    description: "Press play to hear a Part 1-style booking conversation, then complete the form. You can replay it while practising (real IELTS plays once).",
+    wordLimit: "NO MORE THAN TWO WORDS AND/OR A NUMBER",
+    transcript: "Good morning, Greenfield Leisure Centre, how can I help you? Hi, I'd like to register for the swimming course. Of course. Can I take your name? Yes, it's Daniel Foster. Could you spell the surname for me? Certainly, that's F-O-S-T-E-R. Thank you. And what's the best contact number? It's oh-seven-nine-double-two, three-one-five, four-eight-six. Great. Which course are you interested in? The intermediate adults' class. That one runs on Wednesday evenings. Perfect. And what time does it start? It begins at seven thirty. The course fee is ninety pounds for ten weeks. Lovely. Is there anything I need to bring? Just a towel and a swimming cap. The cap is compulsory in our pool. Understood. Where exactly is the centre located? We're on Maple Road, just opposite the public library. Brilliant, thank you very much.",
+    questions: [
+      { id: 1, label: "Name:", prefix: "Daniel", answer: "Foster", explanation: "The caller spells it out: F-O-S-T-E-R. Listen carefully to spelled-out names." },
+      { id: 2, label: "Course level:", prefix: "", answer: "intermediate", acceptableAnswers: ["intermediate", "the intermediate"], explanation: "He asks for 'the intermediate adults' class'. 'Intermediate' is the level." },
+      { id: 3, label: "Day of class:", prefix: "", answer: "wednesday", acceptableAnswers: ["wednesday"], explanation: "'That one runs on Wednesday evenings.' Remember to capitalise days of the week on your answer sheet." },
+      { id: 4, label: "Start time:", prefix: "", answer: "7.30", acceptableAnswers: ["7.30", "7:30", "seven thirty", "half past seven", "7.30pm", "7:30pm"], explanation: "'It begins at seven thirty.' Numbers can be written as digits to save time." },
+      { id: 5, label: "Course fee: £", prefix: "", answer: "90", acceptableAnswers: ["90", "ninety"], explanation: "'The course fee is ninety pounds.' The £ sign is already given, so write only the number." },
+      { id: 6, label: "Must bring (compulsory):", prefix: "swimming", answer: "cap", acceptableAnswers: ["cap", "swimming cap"], explanation: "'The cap is compulsory in our pool.' A towel is needed too, but the cap is the compulsory item." },
+      { id: 7, label: "Location: Maple Road, opposite the", prefix: "", answer: "library", acceptableAnswers: ["library", "public library"], explanation: "'We're on Maple Road, just opposite the public library.'" }
+    ]
+  },
+  "l-mcq": {
+    type: "audio", title: "Listening Practice: Multiple Choice",
+    description: "Press play to hear a Part 2-style talk about a museum, then answer the questions. Listen for which option is confirmed — not just mentioned.",
+    transcript: "Welcome to the City Heritage Museum. Before we begin our tour, a few practical points. The museum was originally built in eighteen ninety, though many visitors assume it dates from the eighteen seventies — in fact it's a little newer than that. Now, regarding photography: you're welcome to take photos in most galleries, but please note that flash photography is not permitted anywhere in the building, as it can damage the delicate artworks. The café on the ground floor is currently being refurbished, so for refreshments today please use the rooftop terrace café instead, which has lovely views over the city. Our most popular exhibit, by far, is the ancient coin collection — although the Roman pottery display also attracts a lot of interest, it's the coins that draw the biggest crowds. Finally, the gift shop closes thirty minutes before the museum itself, so do visit it before five thirty if you'd like a souvenir.",
+    questions: [
+      { id: 1, question: "When was the museum originally built?", options: ["A. The 1870s", "B. 1890", "C. The 1900s"], answer: "B", explanation: "The speaker says it was built in 1890, and corrects the assumption that it's from the 1870s ('in fact it's a little newer'). The 1870s is a distractor." },
+      { id: 2, question: "What is the rule about photography?", options: ["A. No photography at all", "B. Photography is allowed but no flash", "C. Flash photography only"], answer: "B", explanation: "'You're welcome to take photos... but flash photography is not permitted.' Photos are fine; flash is banned." },
+      { id: 3, question: "Where should visitors go for refreshments today?", options: ["A. The ground-floor café", "B. The rooftop terrace café", "C. A nearby restaurant"], answer: "B", explanation: "The ground-floor café is being refurbished, so visitors are directed to the rooftop terrace café. The ground-floor café is a distractor." },
+      { id: 4, question: "Which is the museum's most popular exhibit?", options: ["A. The Roman pottery display", "B. The ancient coin collection", "C. The painting gallery"], answer: "B", explanation: "'It's the coins that draw the biggest crowds.' The Roman pottery is mentioned but explicitly said to be less popular than the coins." }
+    ]
+  },
+  "l-matching": {
+    type: "audio", title: "Listening Practice: Matching",
+    description: "Press play to hear a Part 3-style discussion. Match each student to the part of the project they will work on.",
+    transcript: "Right, let's divide up the group project on renewable energy. There are four of us — me, so that's Anna, plus Ben, Carla and David. I'm quite comfortable with statistics, so I'll take charge of analysing the survey data. That makes sense, Anna. Ben, what about you? Well, I'm not great with numbers, but I really enjoy writing, so I'd be happy to draft the final report. Good. Carla? I'd like to handle the interviews — I'm confident talking to people and I think gathering first-hand opinions will be valuable. Perfect. So that leaves the presentation slides for David. Actually, would you mind if I swapped? I'd much prefer to do the background research — reading up on the existing studies. I'm not very confident presenting. Oh, alright. So who'll do the slides then? I suppose I could add that to my report work, since they overlap. Great, thanks Ben. So we're all sorted.",
+    matchOptions: [
+      { key: "A", text: "Analysing survey data" },
+      { key: "B", text: "Drafting the report and slides" },
+      { key: "C", text: "Conducting interviews" },
+      { key: "D", text: "Background research" }
+    ],
+    questions: [
+      { id: 1, question: "Anna", answer: "A", explanation: "Anna says 'I'm quite comfortable with statistics, so I'll take charge of analysing the survey data.'" },
+      { id: 2, question: "Ben", answer: "B", explanation: "Ben offers to 'draft the final report' and later agrees to add the slides since 'they overlap' — so he handles the report and slides." },
+      { id: 3, question: "Carla", answer: "C", explanation: "Carla says 'I'd like to handle the interviews... gathering first-hand opinions.'" },
+      { id: 4, question: "David", answer: "D", explanation: "David swaps away from slides: 'I'd much prefer to do the background research — reading up on the existing studies.' This is a distractor — he was initially assigned the slides." }
+    ]
+  },
+  "l-map": {
+    type: "quiz", title: "Map & Directions Language Quiz",
+    description: "Test your knowledge of the directional language used in map and plan labelling questions.",
+    questions: [
+      { id: 1, question: "Before a map-labelling recording begins, your FIRST priority should be to:", options: ["Memorise all the labels", "Locate the starting point and compass directions", "Count the buildings", "Guess all the answers"], correct: 1, explanation: "Orient yourself first: find the entrance/starting point and the compass. The speaker almost always begins from a fixed reference point." },
+      { id: 2, question: "'The library is opposite the main entrance.' This means the library is:", options: ["Next to the entrance", "Facing/across from the entrance", "Inside the entrance", "Behind a wall"], correct: 1, explanation: "'Opposite' means directly across from or facing something — a key directional word in map questions." },
+      { id: 3, question: "'Go past the car park and it's at the far end on your left.' The location is:", options: ["Immediately before the car park", "At the distant end, on the left side", "Inside the car park", "On the right, nearby"], correct: 1, explanation: "'At the far end' means the distant end, and 'on your left' specifies the side. Trace the route as you listen." },
+      { id: 4, question: "Which set contains ONLY location/direction words useful for map questions?", options: ["happy, quickly, very, quite", "opposite, adjacent to, between, beyond", "however, therefore, moreover, thus", "big, small, red, round"], correct: 1, explanation: "'Opposite, adjacent to, between, beyond' are all positional/directional terms essential for following a described route." },
+      { id: 5, question: "If you lose track of where the speaker is on the map, the best recovery is to:", options: ["Give up on all map questions", "Listen for the next clearly named landmark to re-locate", "Start labelling randomly", "Ask the invigilator"], correct: 1, explanation: "Listen for the next named landmark already on your map — it anchors you back to the speaker's position." }
+    ]
+  },
+  "l-sentence": {
+    type: "audio", title: "Listening Practice: Sentence Completion",
+    description: "Press play to hear a Part 4-style lecture extract on bees, then complete the sentences with words from the recording.",
+    wordLimit: "NO MORE THAN TWO WORDS",
+    transcript: "Today I want to talk about the remarkable communication system of honeybees. When a foraging bee discovers a good source of nectar, it returns to the hive and performs what scientists call a waggle dance. This dance conveys two crucial pieces of information to the other bees: the direction of the food source, and its distance from the hive. The angle of the dance, relative to the sun, indicates direction. Meanwhile, the duration of the waggle phase indicates distance — the longer the waggle, the further away the food. This was first decoded by the Austrian scientist Karl von Frisch, who won a Nobel Prize for his work in nineteen seventy-three. Interestingly, bees from different regions have slightly different dance dialects, much like human languages vary by region. Researchers have found that this dance is astonishingly accurate, allowing bees to locate flowers several kilometres away with impressive precision.",
+    questions: [
+      { id: 1, stem: "When a bee finds nectar, it returns to the hive and performs a", answer: "waggle dance", acceptableAnswers: ["waggle dance", "waggle-dance"], explanation: "'It returns to the hive and performs what scientists call a waggle dance.'" },
+      { id: 2, stem: "The dance conveys the direction and the ___ of the food source.", answer: "distance", acceptableAnswers: ["distance"], explanation: "'Two crucial pieces of information: the direction... and its distance from the hive.'" },
+      { id: 3, stem: "The angle of the dance, relative to the sun, indicates", answer: "direction", acceptableAnswers: ["direction"], explanation: "'The angle of the dance, relative to the sun, indicates direction.'" },
+      { id: 4, stem: "The dance was first decoded by a scientist named Karl von", answer: "Frisch", acceptableAnswers: ["frisch", "von frisch"], explanation: "'This was first decoded by the Austrian scientist Karl von Frisch.' Note the spelling." },
+      { id: 5, stem: "Bees from different regions have different dance", answer: "dialects", acceptableAnswers: ["dialects"], explanation: "'Bees from different regions have slightly different dance dialects.'" }
+    ]
+  },
+  "l-signpost": {
+    type: "quiz", title: "Signposting & Distractor Quiz",
+    description: "Test your ability to recognise signpost language and avoid distractor traps.",
+    questions: [
+      { id: 1, question: "Which word is a classic signal that a CORRECTION (the real answer) is coming?", options: ["Therefore", "Actually", "Moreover", "Firstly"], correct: 1, explanation: "'Actually' (along with 'sorry', 'in fact', 'wait') signals the speaker is correcting themselves — the real answer usually follows." },
+      { id: 2, question: "The speaker says: 'We'll meet in Room 12 — no, sorry, Room 20.' The correct room is:", options: ["Room 12", "Room 20", "Both", "Neither"], correct: 1, explanation: "'No, sorry' signals a correction. The final answer is Room 20. Room 12 is the distractor stated first." },
+      { id: 3, question: "Words like 'moving on to' and 'turning now to' signal:", options: ["The end of the test", "A topic shift, meaning a new answer may be approaching", "A repeated section", "An error"], correct: 1, explanation: "These are topic-shift signposts — they tell you the speaker is changing focus, so a new answer is likely coming." },
+      { id: 4, question: "Why should you NOT write an answer the instant you hear a match?", options: ["It wastes ink", "The speaker may correct or qualify it a moment later", "It's against the rules", "Answers must be written at the end only"], correct: 1, explanation: "Speakers often state something then correct it. Wait for the statement to finish to confirm the answer isn't overturned by a distractor." },
+      { id: 5, question: "In 'I'd recommend the bus rather than the train', the recommended option is:", options: ["The train", "The bus", "Both equally", "Neither"], correct: 1, explanation: "'Rather than' flips the meaning — the bus is recommended OVER the train. Listen for negation/contrast words that reverse meaning." }
+    ]
+  },
+  "l-spelling": {
+    type: "quiz", title: "Spelling & Numbers Quiz",
+    description: "Test your handling of spelling, numbers, and common formatting traps.",
+    questions: [
+      { id: 1, question: "Which word is spelled CORRECTLY?", options: ["Accomodation", "Acommodation", "Accommodation", "Accommadation"], correct: 2, explanation: "'Accommodation' (double-c, double-m) is one of the most commonly misspelled IELTS words. Memorise it." },
+      { id: 2, question: "You hear 'double four, seven, oh, three'. Written as digits, this is:", options: ["4703", "44703", "447003", "4473"], correct: 1, explanation: "'Double four' = 44, then 7, then 'oh' = 0, then 3 → 44703. 'Oh' means zero in spoken numbers." },
+      { id: 3, question: "How can you tell 'thirteen' from 'thirty' when listening?", options: ["They sound identical", "By the stress pattern — thir-TEEN vs THIR-ty", "Thirty is always written first", "There is no difference"], correct: 1, explanation: "The stress differs: 'thirTEEN' stresses the second syllable; 'THIRty' stresses the first. This applies to all -teen/-ty pairs." },
+      { id: 4, question: "Which of these should always be capitalised in your answers?", options: ["Common nouns like 'table'", "Proper nouns like days, names, and places", "Verbs", "Adjectives"], correct: 1, explanation: "Capitalise proper nouns — days of the week (Monday), names (Foster), and places (Maple Road). Formatting errors can cost marks." },
+      { id: 5, question: "'The third of May' should be written as:", options: ["3 May or 3rd May", "May third only", "The third May", "5 March"], correct: 0, explanation: "'The third of May' = 3 May (or 3rd May). Note: 'May' is the month — don't confuse with March. Both digit forms are accepted." }
+    ]
+  },
+  "l-band": {
+    type: "quiz", title: "Band Score & Final Tips Quiz",
+    description: "Test your knowledge of score conversion and test-day strategy.",
+    questions: [
+      { id: 1, question: "Roughly how many correct answers (out of 40) are needed for Band 7?", options: ["About 20", "About 30", "About 38", "About 15"], correct: 1, explanation: "Around 30 of 40 correct typically yields Band 7. For Band 8, aim for around 35." },
+      { id: 2, question: "Which parts offer the most accessible marks?", options: ["Parts 3 and 4", "Parts 1 and 2", "Only Part 4", "All parts are equally hard"], correct: 1, explanation: "Parts 1 and 2 (everyday contexts) are the most accessible. Secure these marks carefully — they count just as much as harder ones." },
+      { id: 3, question: "Why should you never leave an answer blank?", options: ["It's against the rules", "There's no penalty for wrong answers, so a guess might be right", "Blanks lower your band automatically", "The examiner gets annoyed"], correct: 1, explanation: "There is no penalty for wrong answers. A blank is a guaranteed zero, but a guess has a chance of being correct." },
+      { id: 4, question: "What accents should you prepare for in IELTS Listening?", options: ["Only British", "Only American", "A range including British, Australian, American and Canadian", "No accents — it's all neutral"], correct: 2, explanation: "IELTS uses a variety of native-speaker accents. Practising with different accents prepares you for whatever the test plays." },
+      { id: 5, question: "During the answer review/transfer window, your priority should be to:", options: ["Change every answer", "Check spelling and ensure no answer is left blank", "Add extra detail to answers", "Rewrite everything neatly only"], correct: 1, explanation: "Use the review window to check spelling, fix formatting, and make sure every question has an answer — even a guess." }
+    ]
+  }
+};
+
+// ============================================================
+// SPEECH SYNTHESIS HOOK & AUDIO PLAYER
+// ============================================================
+function useSpeech() {
+  const [speaking, setSpeaking] = useState(false);
+  const [supported, setSupported] = useState(true);
+  const utterRef = useRef(null);
+
+  useEffect(() => {
+    if (typeof window === "undefined" || !window.speechSynthesis) setSupported(false);
+    return () => { if (window.speechSynthesis) window.speechSynthesis.cancel(); };
+  }, []);
+
+  const speak = (text, rate = 0.92) => {
+    if (!window.speechSynthesis) { setSupported(false); return; }
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.rate = rate;
+    u.pitch = 1;
+    const voices = window.speechSynthesis.getVoices();
+    const enVoice = voices.find(v => /en-GB/i.test(v.lang)) || voices.find(v => /en/i.test(v.lang));
+    if (enVoice) u.voice = enVoice;
+    u.onend = () => setSpeaking(false);
+    u.onerror = () => setSpeaking(false);
+    utterRef.current = u;
+    setSpeaking(true);
+    window.speechSynthesis.speak(u);
+  };
+  const stop = () => { if (window.speechSynthesis) window.speechSynthesis.cancel(); setSpeaking(false); };
+  return { speak, stop, speaking, supported };
+}
+
+function AudioPlayer({ transcript, color, label = "Audio Recording" }) {
+  const { speak, stop, speaking, supported } = useSpeech();
+  const [showTranscript, setShowTranscript] = useState(false);
+  const [rate, setRate] = useState(0.92);
+  return (
+    <div style={{ background: "#1A1D2E", border: `1px solid ${color}40`, borderRadius: 12, padding: 18, marginBottom: 18 }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
+        <div style={{ fontSize: 24 }}>🎧</div>
+        <div style={{ flex: 1, minWidth: 120 }}>
+          <div style={{ fontSize: 13, fontWeight: "bold", color, fontFamily: "sans-serif" }}>{label}</div>
+          <div style={{ fontSize: 11, color: "#6A6458", fontFamily: "sans-serif" }}>{speaking ? "Playing..." : "Press play to listen"}</div>
+        </div>
+        {supported ? (
+          <>
+            {!speaking ? (
+              <button onClick={() => speak(transcript, rate)} style={{ background: color, border: "none", borderRadius: 8, padding: "9px 20px", cursor: "pointer", color: "#000", fontFamily: "sans-serif", fontSize: 13, fontWeight: "bold", display: "flex", alignItems: "center", gap: 6 }}>▶ Play</button>
+            ) : (
+              <button onClick={stop} style={{ background: "#CF6679", border: "none", borderRadius: 8, padding: "9px 20px", cursor: "pointer", color: "#000", fontFamily: "sans-serif", fontSize: 13, fontWeight: "bold", display: "flex", alignItems: "center", gap: 6 }}>■ Stop</button>
+            )}
+            <select value={rate} onChange={e => setRate(parseFloat(e.target.value))} style={{ background: "#0F1117", border: "1px solid #2A2D3E", borderRadius: 6, padding: "8px 10px", color: "#C8C0B0", fontFamily: "sans-serif", fontSize: 12, cursor: "pointer" }}>
+              <option value={0.75}>0.75× slow</option>
+              <option value={0.92}>1× normal</option>
+              <option value={1.1}>1.1× fast</option>
+            </select>
+          </>
+        ) : (
+          <div style={{ fontSize: 12, color: "#CF6679", fontFamily: "sans-serif", maxWidth: 220 }}>Audio playback isn't supported in this browser. Use the transcript below to practise.</div>
+        )}
+      </div>
+      <button onClick={() => setShowTranscript(s => !s)} style={{ background: "transparent", border: "none", color: "#6A6458", fontFamily: "sans-serif", fontSize: 11, cursor: "pointer", marginTop: 10, textDecoration: "underline", padding: 0 }}>
+        {showTranscript ? "Hide transcript" : "Show transcript (for review after attempting)"}
+      </button>
+      {showTranscript && <p style={{ fontSize: 13, lineHeight: 1.8, color: "#8A8070", marginTop: 8, marginBottom: 0, fontStyle: "italic", borderTop: "1px solid #2A2D3E", paddingTop: 10 }}>{transcript}</p>}
+    </div>
+  );
+}
+
+// ============================================================
+// LISTENING PRACTICE EXERCISE COMPONENT
+// ============================================================
+function ListeningPracticeExercise({ exercise, color }) {
+  const [answers, setAnswers] = useState({});
+  const [checked, setChecked] = useState(false);
+  const setAns = (id, val) => { setAnswers(p => ({ ...p, [id]: val })); if (checked) setChecked(false); };
+
+  const checkOne = (q) => {
+    const ua = (answers[q.id] || "").toLowerCase().trim();
+    if (exercise.type === "quiz") return parseInt(answers[q.id]) === q.correct;
+    if (q.acceptableAnswers) return q.acceptableAnswers.some(a => a.toLowerCase() === ua);
+    return ua === (q.answer || "").toLowerCase().trim();
+  };
+  const score = checked ? exercise.questions.filter(checkOne).length : 0;
+
+  const inputStyle = (correct) => ({
+    background: checked ? (correct ? "#1A3A1E" : "#3A1A1E") : "#0F1117",
+    border: `1px solid ${checked ? (correct ? "#5BAF73" : "#CF6679") : "#3A3D4E"}`,
+    borderRadius: 6, padding: "8px 12px", color: "#E8E0D0",
+    fontFamily: "Georgia, serif", fontSize: 14, outline: "none", minWidth: 160
+  });
+
+  return (
+    <div style={{ paddingBottom: 20 }}>
+      <div style={{ marginBottom: 18, padding: "12px 16px", background: `${color}15`, borderLeft: `3px solid ${color}`, borderRadius: "0 8px 8px 0" }}>
+        <div style={{ fontSize: 13, fontFamily: "sans-serif", color, fontWeight: "bold", marginBottom: 4 }}>{exercise.title}</div>
+        <div style={{ fontSize: 13, color: "#B0A898" }}>{exercise.description}</div>
+      </div>
+
+      {exercise.type === "audio" && <AudioPlayer transcript={exercise.transcript} color={color} />}
+
+      {exercise.wordLimit && (
+        <div style={{ fontSize: 12, color: "#8A8070", fontFamily: "sans-serif", marginBottom: 14, background: "#0F1117", border: "1px solid #2A2D3E", borderRadius: 6, padding: "8px 12px" }}>
+          Word limit: {exercise.wordLimit}
+        </div>
+      )}
+
+      {/* QUIZ */}
+      {exercise.type === "quiz" && (
+        <div style={{ display: "flex", flexDirection: "column", gap: 14, marginBottom: 16 }}>
+          {exercise.questions.map(q => {
+            const sel = answers[q.id];
+            return (
+              <div key={q.id} style={{ background: "#13161F", border: "1px solid #2A2D3E", borderRadius: 10, padding: 16 }}>
+                <div style={{ fontSize: 14, color: "#E8E0D0", marginBottom: 10, lineHeight: 1.6 }}>
+                  <span style={{ color, fontWeight: "bold", marginRight: 8, fontFamily: "sans-serif" }}>Q{q.id}.</span>{q.question}
+                </div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                  {q.options.map((opt, idx) => {
+                    const isSel = parseInt(sel) === idx;
+                    const isRight = idx === q.correct;
+                    const bg = checked ? (isRight ? "#1A3A1E" : (isSel && !isRight ? "#3A1A1E" : "#0F1117")) : (isSel ? "#1E2040" : "#0F1117");
+                    const bc = checked ? (isRight ? "#5BAF73" : (isSel && !isRight ? "#CF6679" : "#2A2D3E")) : (isSel ? color : "#2A2D3E");
+                    return (
+                      <button key={idx} onClick={() => !checked && setAns(q.id, idx)} style={{ background: bg, border: `1px solid ${bc}`, borderRadius: 7, padding: "9px 14px", cursor: checked ? "default" : "pointer", color: "#C8C0B0", fontFamily: "Georgia, serif", fontSize: 13, textAlign: "left", transition: "all 0.15s" }}>
+                        <span style={{ color, fontWeight: "bold", marginRight: 8 }}>{"ABCD"[idx]}.</span>{opt}
+                        {checked && isRight && <span style={{ color: "#5BAF73", marginLeft: 8, fontSize: 12 }}>✓ Correct</span>}
+                        {checked && isSel && !isRight && <span style={{ color: "#CF6679", marginLeft: 8, fontSize: 12 }}>✗</span>}
+                      </button>
+                    );
+                  })}
+                </div>
+                {checked && <div style={{ fontSize: 12, color: "#8A8070", marginTop: 10, lineHeight: 1.6, borderTop: "1px solid #2A2D3E", paddingTop: 8 }}>💡 {q.explanation}</div>}
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {/* AUDIO — FORM COMPLETION */}
+      {exercise.type === "audio" && exercise.questions[0].label !== undefined && (
+        <div style={{ background: "#13161F", border: "1px solid #2A2D3E", borderRadius: 10, padding: 20, marginBottom: 16 }}>
+          <div style={{ fontSize: 11, letterSpacing: 2, color, fontFamily: "sans-serif", textTransform: "uppercase", marginBottom: 14 }}>📋 COMPLETE THE FORM</div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            {exercise.questions.map(q => {
+              const correct = checked ? checkOne(q) : null;
+              return (
+                <div key={q.id}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
+                    <span style={{ color, fontWeight: "bold", fontFamily: "sans-serif", fontSize: 13, minWidth: 24 }}>Q{q.id}</span>
+                    <span style={{ fontSize: 14, color: "#C8C0B0" }}>{q.label}</span>
+                    {q.prefix && <span style={{ fontSize: 14, color: "#8A8070" }}>{q.prefix}</span>}
+                    <input value={answers[q.id] || ""} onChange={e => !checked && setAns(q.id, e.target.value)} placeholder="..." style={inputStyle(correct)} />
+                    {checked && <span style={{ color: correct ? "#5BAF73" : "#CF6679", fontFamily: "sans-serif", fontSize: 14 }}>{correct ? "✓" : `✗ ${q.answer}`}</span>}
+                  </div>
+                  {checked && !correct && <div style={{ fontSize: 12, color: "#8A8070", lineHeight: 1.6, marginTop: 4, paddingLeft: 34 }}>{q.explanation}</div>}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* AUDIO — MCQ */}
+      {exercise.type === "audio" && exercise.questions[0].options !== undefined && (
+        <div style={{ display: "flex", flexDirection: "column", gap: 14, marginBottom: 16 }}>
+          {exercise.questions.map(q => {
+            return (
+              <div key={q.id} style={{ background: "#13161F", border: "1px solid #2A2D3E", borderRadius: 10, padding: 16 }}>
+                <div style={{ fontSize: 14, color: "#E8E0D0", marginBottom: 10, lineHeight: 1.6 }}>
+                  <span style={{ color, fontWeight: "bold", marginRight: 8, fontFamily: "sans-serif" }}>Q{q.id}.</span>{q.question}
+                </div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                  {q.options.map(opt => {
+                    const letter = opt[0];
+                    const isSel = answers[q.id] === letter;
+                    const isRight = letter === q.answer;
+                    const bg = checked ? (isRight ? "#1A3A1E" : (isSel && !isRight ? "#3A1A1E" : "#0F1117")) : (isSel ? "#1E2040" : "#0F1117");
+                    const bc = checked ? (isRight ? "#5BAF73" : (isSel && !isRight ? "#CF6679" : "#2A2D3E")) : (isSel ? color : "#2A2D3E");
+                    return (
+                      <button key={letter} onClick={() => !checked && setAns(q.id, letter)} style={{ background: bg, border: `1px solid ${bc}`, borderRadius: 7, padding: "9px 14px", cursor: checked ? "default" : "pointer", color: "#C8C0B0", fontFamily: "Georgia, serif", fontSize: 13, textAlign: "left", transition: "all 0.15s" }}>
+                        {opt}
+                        {checked && isRight && <span style={{ color: "#5BAF73", marginLeft: 8, fontSize: 12 }}>✓</span>}
+                        {checked && isSel && !isRight && <span style={{ color: "#CF6679", marginLeft: 8, fontSize: 12 }}>✗</span>}
+                      </button>
+                    );
+                  })}
+                </div>
+                {checked && <div style={{ fontSize: 12, color: "#8A8070", marginTop: 10, lineHeight: 1.6, borderTop: "1px solid #2A2D3E", paddingTop: 8 }}>💡 {q.explanation}</div>}
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {/* AUDIO — MATCHING */}
+      {exercise.type === "audio" && exercise.matchOptions !== undefined && (
+        <div style={{ marginBottom: 16 }}>
+          <div style={{ background: "#1A1D2E", border: "1px solid #2A2D3E", borderRadius: 10, padding: 16, marginBottom: 14 }}>
+            <div style={{ fontSize: 11, letterSpacing: 1, color: "#8A8070", fontFamily: "sans-serif", marginBottom: 10 }}>OPTIONS</div>
+            {exercise.matchOptions.map(o => (
+              <div key={o.key} style={{ fontSize: 13, color: "#B0A898", padding: "3px 0", fontFamily: "Georgia, serif" }}>
+                <span style={{ color, fontWeight: "bold" }}>{o.key}.</span> {o.text}
+              </div>
+            ))}
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            {exercise.questions.map(q => {
+              const correct = checked ? checkOne(q) : null;
+              return (
+                <div key={q.id} style={{ background: "#13161F", border: `1px solid ${checked ? (correct ? "#5BAF73" : "#CF6679") : "#2A2D3E"}`, borderRadius: 8, padding: "12px 16px" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                    <span style={{ color, fontWeight: "bold", fontFamily: "sans-serif", fontSize: 13 }}>Q{q.id}</span>
+                    <span style={{ fontSize: 14, color: "#C8C0B0", flex: 1, fontWeight: "bold" }}>{q.question}</span>
+                    <select value={answers[q.id] || ""} onChange={e => !checked && setAns(q.id, e.target.value)} style={{ background: "#0F1117", border: "1px solid #3A3D4E", borderRadius: 6, padding: "6px 10px", color: "#E8E0D0", fontFamily: "sans-serif", fontSize: 13, cursor: checked ? "default" : "pointer" }}>
+                      <option value="">—</option>
+                      {exercise.matchOptions.map(o => <option key={o.key} value={o.key}>{o.key}</option>)}
+                    </select>
+                    {checked && <span style={{ color: correct ? "#5BAF73" : "#CF6679", fontFamily: "sans-serif" }}>{correct ? "✓" : `✗ → ${q.answer}`}</span>}
+                  </div>
+                  {checked && <div style={{ fontSize: 12, color: "#8A8070", lineHeight: 1.6, marginTop: 6, paddingLeft: 32 }}>{q.explanation}</div>}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* AUDIO — SENTENCE COMPLETION */}
+      {exercise.type === "audio" && exercise.questions[0].stem !== undefined && (
+        <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 16 }}>
+          {exercise.questions.map(q => {
+            const correct = checked ? checkOne(q) : null;
+            return (
+              <div key={q.id} style={{ background: "#13161F", border: `1px solid ${checked ? (correct ? "#5BAF73" : "#CF6679") : "#2A2D3E"}`, borderRadius: 8, padding: "14px 16px" }}>
+                <div style={{ fontSize: 14, color: "#C8C0B0", marginBottom: 10, lineHeight: 1.6 }}>
+                  <span style={{ color, fontWeight: "bold", marginRight: 8, fontFamily: "sans-serif" }}>Q{q.id}.</span>{q.stem} <span style={{ background: "#2A2D3E", padding: "1px 6px", borderRadius: 3, color: "#E8E0D0" }}>___</span>
+                </div>
+                <input value={answers[q.id] || ""} onChange={e => !checked && setAns(q.id, e.target.value)} placeholder="Your answer..." style={{ ...inputStyle(correct), width: "100%", boxSizing: "border-box", minWidth: 0 }} />
+                {checked && (
+                  <div style={{ fontSize: 12, color: "#8A8070", lineHeight: 1.6, borderTop: "1px solid #2A2D3E", paddingTop: 8, marginTop: 8 }}>
+                    {correct ? <span style={{ color: "#5BAF73" }}>✓ Correct: {q.answer}</span> : <span style={{ color: "#CF6679" }}>✗ Correct answer: <strong style={{ color: "#E8E0D0" }}>{q.answer}</strong></span>}
+                    <br />{q.explanation}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <button onClick={() => setChecked(true)} disabled={checked} style={{ background: checked ? "#1A1D2E" : color, border: "none", borderRadius: 8, padding: "11px 22px", cursor: checked ? "default" : "pointer", color: checked ? "#5A5448" : "#000", fontFamily: "sans-serif", fontSize: 13, fontWeight: "bold" }}>Check Answers</button>
+        {checked && <>
+          <div style={{ fontFamily: "sans-serif", fontSize: 14, color: score === exercise.questions.length ? "#5BAF73" : score >= exercise.questions.length * 0.6 ? "#C8A951" : "#CF6679" }}>Score: {score}/{exercise.questions.length}</div>
+          <button onClick={() => { setAnswers({}); setChecked(false); }} style={{ background: "transparent", border: "1px solid #2A2D3E", borderRadius: 8, padding: "9px 16px", cursor: "pointer", color: "#8A8070", fontFamily: "sans-serif", fontSize: 12 }}>Reset</button>
+        </>}
+      </div>
+    </div>
+  );
+}
+
+// ============================================================
+// LISTENING STUDY MODE
+// ============================================================
+function ListeningStudyMode({ onStartTest, onBack }) {
+  const [activeId, setActiveId] = useState("l-overview");
+  const [activeTab, setActiveTab] = useState("learn");
+  const [expandedTip, setExpandedTip] = useState(null);
+  const active = listeningCurriculum.find(c => c.id === activeId);
+  const exercise = listeningExercises[activeId];
+  const selectTopic = (id) => { setActiveId(id); setActiveTab("learn"); setExpandedTip(null); };
+  const idx = listeningCurriculum.findIndex(c => c.id === activeId);
+  return (
+    <div style={{ minHeight: "100vh", background: "#0F1117", fontFamily: "Georgia, serif", color: "#E8E0D0", display: "flex", flexDirection: "column" }}>
+      <div style={{ background: "linear-gradient(135deg, #1A1D2E 0%, #0F1117 100%)", borderBottom: "1px solid #2A2D3E", padding: "20px 28px", display: "flex", alignItems: "center", gap: 16 }}>
+        <div style={{ width: 44, height: 44, borderRadius: 10, background: "linear-gradient(135deg, #B87CB8, #7A4A7A)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22, flexShrink: 0 }}>🎧</div>
+        <div>
+          <div style={{ fontSize: 10, letterSpacing: 3, color: "#B87CB8", textTransform: "uppercase", fontFamily: "sans-serif", marginBottom: 2 }}>IELTS MASTERCLASS</div>
+          <div style={{ fontSize: 20, fontWeight: "bold", color: "#F0E8D0", lineHeight: 1 }}>Listening Module — Complete Guide</div>
+        </div>
+        <div style={{ marginLeft: "auto", display: "flex", gap: 10, alignItems: "center" }}>
+          <button onClick={onBack} style={{ background: "transparent", border: "1px solid #2A2D3E", borderRadius: 8, padding: "9px 16px", cursor: "pointer", color: "#8A8070", fontFamily: "sans-serif", fontSize: 12 }}>← All Modules</button>
+          <button onClick={onStartTest} style={{ background: "linear-gradient(135deg, #B87CB8, #7A4A7A)", border: "none", borderRadius: 8, padding: "10px 20px", cursor: "pointer", color: "#000", fontFamily: "sans-serif", fontSize: 13, fontWeight: "bold", letterSpacing: 0.5 }}>🎧 Full Listening Test</button>
+        </div>
+      </div>
+      <div style={{ display: "flex", flex: 1, overflow: "hidden" }}>
+        <div style={{ width: 232, background: "#13161F", borderRight: "1px solid #2A2D3E", overflowY: "auto", flexShrink: 0, padding: "10px 0" }}>
+          {listeningCurriculum.map(item => (
+            <button key={item.id} onClick={() => selectTopic(item.id)} style={{ width: "100%", background: activeId === item.id ? `linear-gradient(90deg, ${item.color}22, transparent)` : "transparent", border: "none", borderLeft: activeId === item.id ? `3px solid ${item.color}` : "3px solid transparent", padding: "11px 14px", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, textAlign: "left", transition: "all 0.2s" }}>
+              <span style={{ fontSize: 16, flexShrink: 0 }}>{item.icon}</span>
+              <div>
+                <div style={{ fontSize: 12, color: activeId === item.id ? item.color : "#C8C0B0", fontWeight: activeId === item.id ? "bold" : "normal", fontFamily: "sans-serif", lineHeight: 1.3 }}>{item.title}</div>
+                <div style={{ fontSize: 10, color: "#4A4438", fontFamily: "sans-serif", marginTop: 1 }}>{item.subtitle}</div>
+              </div>
+            </button>
+          ))}
+        </div>
+        <div style={{ flex: 1, overflowY: "auto", padding: "28px" }}>
+          <div style={{ maxWidth: 780, margin: "0 auto" }}>
+            <div style={{ marginBottom: 22 }}>
+              <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: `${active.color}18`, border: `1px solid ${active.color}40`, borderRadius: 6, padding: "5px 12px", marginBottom: 10 }}>
+                <span style={{ fontSize: 16 }}>{active.icon}</span>
+                <span style={{ fontSize: 10, letterSpacing: 2, color: active.color, textTransform: "uppercase", fontFamily: "sans-serif" }}>{active.subtitle}</span>
+              </div>
+              <h1 style={{ fontSize: 28, margin: "0 0 10px", color: "#F0E8D0", lineHeight: 1.2 }}>{active.title}</h1>
+            </div>
+            <div style={{ display: "flex", gap: 4, marginBottom: 22, borderBottom: "1px solid #2A2D3E" }}>
+              {["learn", "practice"].map(tab => (
+                <button key={tab} onClick={() => setActiveTab(tab)} style={{ background: "none", border: "none", borderBottom: activeTab === tab ? `2px solid ${active.color}` : "2px solid transparent", padding: "8px 16px", cursor: "pointer", color: activeTab === tab ? active.color : "#6A6458", fontFamily: "sans-serif", fontSize: 13, fontWeight: activeTab === tab ? "bold" : "normal", textTransform: "capitalize", marginBottom: -1, letterSpacing: 0.5, transition: "all 0.15s" }}>
+                  {tab === "learn" ? "📖 Learn" : "🎧 Practice"}
+                </button>
+              ))}
+            </div>
+            {activeTab === "learn" && (
+              <div>
+                <p style={{ fontSize: 15, lineHeight: 1.75, color: "#B0A898", margin: "0 0 22px", fontStyle: "italic", borderLeft: `3px solid ${active.color}`, paddingLeft: 14 }}>{active.content.intro}</p>
+                <div style={{ display: "flex", flexDirection: "column", gap: 14, marginBottom: 28 }}>
+                  {active.content.sections.map((s, i) => (
+                    <div key={i} style={{ background: "#1A1D2E", borderRadius: 10, padding: 18, border: "1px solid #2A2D3E" }}>
+                      <div style={{ fontSize: 12, fontWeight: "bold", color: active.color, marginBottom: 7, fontFamily: "sans-serif", letterSpacing: 0.5 }}>{s.heading}</div>
+                      <p style={{ margin: 0, fontSize: 14, lineHeight: 1.75, color: "#C8C0B0" }}>{s.body}</p>
+                    </div>
+                  ))}
+                </div>
+                <div style={{ background: "linear-gradient(135deg, #1E1A10, #1A1D2E)", borderRadius: 12, padding: 22, border: `1px solid ${active.color}40` }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16 }}>
+                    <div style={{ width: 26, height: 26, borderRadius: "50%", background: active.color, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13 }}>💡</div>
+                    <span style={{ fontSize: 13, fontWeight: "bold", color: active.color, fontFamily: "sans-serif", letterSpacing: 1 }}>INSTRUCTOR TIPS & TRICKS</span>
+                  </div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                    {active.content.tips.map((tip, i) => (
+                      <div key={i} onClick={() => setExpandedTip(expandedTip === `${activeId}-${i}` ? null : `${activeId}-${i}`)} style={{ background: expandedTip === `${activeId}-${i}` ? `${active.color}15` : "#0F1117", borderRadius: 8, padding: "10px 14px", cursor: "pointer", border: `1px solid ${expandedTip === `${activeId}-${i}` ? active.color + "60" : "#2A2D3E"}`, transition: "all 0.2s", display: "flex", gap: 10, alignItems: "flex-start" }}>
+                        <div style={{ width: 20, height: 20, borderRadius: "50%", background: active.color, color: "#000", fontSize: 10, fontWeight: "bold", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: 1, fontFamily: "sans-serif" }}>{i + 1}</div>
+                        <span style={{ fontSize: 13, lineHeight: 1.65, color: "#C8C0B0" }}>{tip}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div style={{ display: "flex", justifyContent: "space-between", marginTop: 24, gap: 12 }}>
+                  {idx > 0 && <button onClick={() => selectTopic(listeningCurriculum[idx - 1].id)} style={{ background: "#1A1D2E", border: "1px solid #2A2D3E", borderRadius: 8, padding: "10px 18px", cursor: "pointer", color: "#C8C0B0", fontFamily: "sans-serif", fontSize: 12 }}>← Previous</button>}
+                  <div style={{ flex: 1 }} />
+                  <button onClick={() => setActiveTab("practice")} style={{ background: `${active.color}22`, border: `1px solid ${active.color}60`, borderRadius: 8, padding: "10px 18px", cursor: "pointer", color: active.color, fontFamily: "sans-serif", fontSize: 12, fontWeight: "bold" }}>🎧 Try Practice Exercise</button>
+                  {idx < listeningCurriculum.length - 1 && <button onClick={() => selectTopic(listeningCurriculum[idx + 1].id)} style={{ background: active.color, border: "none", borderRadius: 8, padding: "10px 18px", cursor: "pointer", color: "#000", fontFamily: "sans-serif", fontSize: 12, fontWeight: "bold" }}>Next →</button>}
+                </div>
+                <div style={{ marginTop: 20 }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 5 }}>
+                    <span style={{ fontSize: 10, color: "#4A4438", fontFamily: "sans-serif", letterSpacing: 1 }}>PROGRESS</span>
+                    <span style={{ fontSize: 10, color: active.color, fontFamily: "sans-serif" }}>{idx + 1} / {listeningCurriculum.length}</span>
+                  </div>
+                  <div style={{ height: 3, background: "#2A2D3E", borderRadius: 3 }}>
+                    <div style={{ height: "100%", borderRadius: 3, background: active.color, width: `${((idx + 1) / listeningCurriculum.length) * 100}%`, transition: "width 0.4s ease" }} />
+                  </div>
+                </div>
+              </div>
+            )}
+            {activeTab === "practice" && exercise && <ListeningPracticeExercise exercise={exercise} color={active.color} />}
+            {activeTab === "practice" && !exercise && <div style={{ padding: 40, textAlign: "center", color: "#5A5448", fontSize: 14 }}>No practice exercise available for this topic yet.</div>}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ============================================================
+// LISTENING TEST MODE — 40 questions, 4 parts, TTS audio
+// ============================================================
+const listeningTestData = [
+  {
+    part: 1, context: "A conversation between a customer and a travel agent about booking a holiday.",
+    transcript: "Hello, Sunseeker Travel, how may I help you? Hi, I'd like to enquire about your holiday packages to Greece. Wonderful. May I take your name? Yes, it's Helen Marsh. That's M-A-R-S-H. Thank you, Helen. And how many people will be travelling? There'll be four of us in total. Lovely. Do you have a preferred departure month? We were thinking of August. August is very popular, so I'd recommend booking early. Which airport would you like to fly from? Manchester, if possible. That's fine, we have direct flights from Manchester. Now, the standard package costs six hundred and fifty pounds per person, and that includes flights and accommodation. Does that include meals? Breakfast is included, but lunch and dinner are extra. I see. And how long is the holiday? It's a seven-night stay. Perfect. Is there anything else included? Yes, there's a free airport transfer to your hotel. And finally, could I get a contact number? Of course, it's oh-one-six-one, double two-four, nine-one-three-eight.",
+    questions: [
+      { id: 1, type: "completion", label: "Customer name: Helen", answer: "Marsh", acceptableAnswers: ["marsh"], wordLimit: "ONE WORD", explanation: "Spelled out: M-A-R-S-H." },
+      { id: 2, type: "completion", label: "Number of travellers:", answer: "4", acceptableAnswers: ["4", "four"], wordLimit: "A NUMBER", explanation: "'There'll be four of us in total.'" },
+      { id: 3, type: "completion", label: "Departure month:", answer: "August", acceptableAnswers: ["august"], wordLimit: "ONE WORD", explanation: "'We were thinking of August.'" },
+      { id: 4, type: "completion", label: "Departure airport:", answer: "Manchester", acceptableAnswers: ["manchester"], wordLimit: "ONE WORD", explanation: "'Manchester, if possible... direct flights from Manchester.'" },
+      { id: 5, type: "completion", label: "Standard package cost per person: £", answer: "650", acceptableAnswers: ["650"], wordLimit: "A NUMBER", explanation: "'Six hundred and fifty pounds per person.'" },
+      { id: 6, type: "completion", label: "Meal included:", answer: "breakfast", acceptableAnswers: ["breakfast"], wordLimit: "ONE WORD", explanation: "'Breakfast is included, but lunch and dinner are extra.'" },
+      { id: 7, type: "completion", label: "Length of stay (nights):", answer: "7", acceptableAnswers: ["7", "seven"], wordLimit: "A NUMBER", explanation: "'It's a seven-night stay.'" },
+      { id: 8, type: "completion", label: "Free extra: airport", answer: "transfer", acceptableAnswers: ["transfer"], wordLimit: "ONE WORD", explanation: "'There's a free airport transfer to your hotel.'" },
+      { id: 9, type: "mcq", question: "What does the agent recommend?", options: ["A. Travelling in a different month", "B. Booking early", "C. Flying from a different airport"], answer: "B", explanation: "'August is very popular, so I'd recommend booking early.'" },
+      { id: 10, type: "mcq", question: "Which meals are NOT included?", options: ["A. Breakfast only", "B. All meals", "C. Lunch and dinner"], answer: "C", explanation: "'Breakfast is included, but lunch and dinner are extra.'" }
+    ]
+  },
+  {
+    part: 2, context: "A monologue: a community centre manager describing facilities and a weekly schedule.",
+    transcript: "Welcome, everyone, to the Riverside Community Centre. Let me run through what we offer. Our main hall is the largest space and is used for fitness classes throughout the week. On Mondays, we have yoga in the morning, which is particularly popular with our older members. Tuesdays are reserved for the children's art club, so the centre can get quite lively. On Wednesday evenings, the hall transforms into a venue for our amateur dramatics group, who are currently rehearsing a play. Thursday is our quietest day — the hall is available for private bookings, such as birthday parties. And on Fridays, we host a community film night, which is free for all members. Now, regarding the facilities: the café is located just to the left as you enter, opposite the reception desk. The library and reading room are at the far end of the corridor, past the toilets. One important change: our car park is currently closed for resurfacing, so please use the street parking on Bridge Lane for the time being. Membership costs forty pounds a year, which gives you access to all activities.",
+    questions: [
+      { id: 11, type: "matching", question: "Monday", answer: "A", explanation: "'On Mondays, we have yoga.'" },
+      { id: 12, type: "matching", question: "Tuesday", answer: "C", explanation: "'Tuesdays are reserved for the children's art club.'" },
+      { id: 13, type: "matching", question: "Wednesday", answer: "D", explanation: "'On Wednesday evenings... amateur dramatics group.'" },
+      { id: 14, type: "matching", question: "Friday", answer: "B", explanation: "'On Fridays, we host a community film night.'" },
+      { id: 15, type: "mcq", question: "Where is the café located?", options: ["A. To the right of the entrance", "B. To the left, opposite reception", "C. At the far end of the corridor"], answer: "B", explanation: "'The café is located just to the left as you enter, opposite the reception desk.'" },
+      { id: 16, type: "mcq", question: "Why is the car park closed?", options: ["A. For resurfacing", "B. For a private event", "C. It is being demolished"], answer: "A", explanation: "'Our car park is currently closed for resurfacing.'" },
+      { id: 17, type: "mcq", question: "Where should visitors park instead?", options: ["A. In the main hall", "B. On Bridge Lane", "C. At the library"], answer: "B", explanation: "'Please use the street parking on Bridge Lane.'" },
+      { id: 18, type: "completion", label: "Thursday: hall available for", answer: "private bookings", acceptableAnswers: ["private bookings", "private booking"], wordLimit: "TWO WORDS", explanation: "'Thursday... the hall is available for private bookings.'" },
+      { id: 19, type: "completion", label: "The library is past the", answer: "toilets", acceptableAnswers: ["toilets", "the toilets"], wordLimit: "ONE WORD", explanation: "'The library and reading room are at the far end of the corridor, past the toilets.'" },
+      { id: 20, type: "completion", label: "Annual membership cost: £", answer: "40", acceptableAnswers: ["40", "forty"], wordLimit: "A NUMBER", explanation: "'Membership costs forty pounds a year.'" }
+    ],
+    matchOptions: [
+      { key: "A", text: "Yoga" },
+      { key: "B", text: "Film night" },
+      { key: "C", text: "Children's art club" },
+      { key: "D", text: "Amateur dramatics" }
+    ]
+  },
+  {
+    part: 3, context: "A discussion between two students, Maya and Tom, and their tutor about a research project.",
+    transcript: "So, Maya and Tom, how is your research project on urban gardening progressing? Quite well, I think. We've collected most of our survey data. Good. What method did you use? We used online questionnaires, which let us reach a large number of participants quickly. That's sensible. Any difficulties? Well, our main challenge was the low response rate at first. Many people started the survey but didn't finish it. How did you address that? We shortened the questionnaire, and the completion rate improved significantly after that. Excellent problem-solving. Tom, what did the data reveal? The most striking finding was that younger residents were far more interested in community gardens than we expected. We'd assumed older people would be the keenest. An interesting surprise. And what do you plan to do next? We're going to conduct a few face-to-face interviews to explore the reasons behind that result. Good idea — qualitative data will add depth. One suggestion: make sure you record the interviews so you don't miss anything. That's a great point, we'll do that. And when is your deadline? The final report is due on the fifteenth of March. Plenty of time, then. Make sure you leave a week for proofreading.",
+    questions: [
+      { id: 21, type: "mcq", question: "What research method did the students use to collect data?", options: ["A. Face-to-face interviews", "B. Online questionnaires", "C. Laboratory experiments"], answer: "B", explanation: "'We used online questionnaires, which let us reach a large number of participants quickly.'" },
+      { id: 22, type: "mcq", question: "What was their main initial difficulty?", options: ["A. A low response rate", "B. Lack of funding", "C. Too much data"], answer: "A", explanation: "'Our main challenge was the low response rate at first.'" },
+      { id: 23, type: "mcq", question: "How did they solve this problem?", options: ["A. They offered a prize", "B. They shortened the questionnaire", "C. They extended the deadline"], answer: "B", explanation: "'We shortened the questionnaire, and the completion rate improved significantly.'" },
+      { id: 24, type: "mcq", question: "What was the most striking finding?", options: ["A. Older residents were the keenest gardeners", "B. Younger residents were more interested than expected", "C. No one was interested in community gardens"], answer: "B", explanation: "'Younger residents were far more interested in community gardens than we expected.' The assumption about older people is a distractor." },
+      { id: 25, type: "mcq", question: "What will the students do next?", options: ["A. Conduct face-to-face interviews", "B. Repeat the online survey", "C. Abandon the project"], answer: "A", explanation: "'We're going to conduct a few face-to-face interviews.'" },
+      { id: 26, type: "completion", label: "The tutor suggests they ___ the interviews.", answer: "record", acceptableAnswers: ["record"], wordLimit: "ONE WORD", explanation: "'Make sure you record the interviews so you don't miss anything.'" },
+      { id: 27, type: "completion", label: "The interviews will provide ___ data.", answer: "qualitative", acceptableAnswers: ["qualitative"], wordLimit: "ONE WORD", explanation: "'Qualitative data will add depth.'" },
+      { id: 28, type: "completion", label: "Final report deadline: 15th of", answer: "March", acceptableAnswers: ["march"], wordLimit: "ONE WORD", explanation: "'The final report is due on the fifteenth of March.'" },
+      { id: 29, type: "completion", label: "The tutor advises leaving a week for", answer: "proofreading", acceptableAnswers: ["proofreading"], wordLimit: "ONE WORD", explanation: "'Make sure you leave a week for proofreading.'" },
+      { id: 30, type: "mcq", question: "What is the project's topic?", options: ["A. Urban gardening", "B. Air pollution", "C. Public transport"], answer: "A", explanation: "'How is your research project on urban gardening progressing?'" }
+    ]
+  },
+  {
+    part: 4, context: "An academic lecture on the history and science of chocolate.",
+    transcript: "Today's lecture concerns the fascinating history of chocolate. Chocolate comes from the seeds of the cacao tree, which is native to the tropical regions of Central and South America. The ancient Maya and Aztec civilisations were the first to cultivate cacao, and they valued it so highly that the beans were actually used as a form of currency. They consumed chocolate as a bitter drink, often flavoured with spices such as chilli — quite different from the sweet chocolate we know today. Chocolate was introduced to Europe in the sixteenth century, where sugar was added to make it more palatable to European tastes. For a long time, it remained an expensive luxury, affordable only to the wealthy. This changed during the Industrial Revolution, when new machinery made mass production possible, dramatically reducing the price. A key breakthrough came in eighteen forty-seven, when the first solid chocolate bar was produced in England. Later, in eighteen seventy-five, a Swiss manufacturer invented milk chocolate by adding condensed milk. From a scientific perspective, chocolate contains a stimulant called theobromine, which is similar to caffeine. It also contains compounds that some studies suggest may improve mood. However, I should emphasise that the health benefits are often exaggerated, and chocolate remains high in sugar and fat. Next week, we'll examine the modern cocoa trade and the sustainability challenges facing the industry.",
+    questions: [
+      { id: 31, type: "completion", label: "Chocolate comes from the seeds of the ___ tree.", answer: "cacao", acceptableAnswers: ["cacao", "cocoa"], wordLimit: "ONE WORD", explanation: "'Chocolate comes from the seeds of the cacao tree.'" },
+      { id: 32, type: "completion", label: "The Maya and Aztec used the beans as a form of", answer: "currency", acceptableAnswers: ["currency", "money"], wordLimit: "ONE WORD", explanation: "'The beans were actually used as a form of currency.'" },
+      { id: 33, type: "completion", label: "Early chocolate was a bitter drink flavoured with spices such as", answer: "chilli", acceptableAnswers: ["chilli", "chili"], wordLimit: "ONE WORD", explanation: "'Often flavoured with spices such as chilli.'" },
+      { id: 34, type: "completion", label: "Chocolate reached Europe in the ___ century.", answer: "sixteenth", acceptableAnswers: ["sixteenth", "16th"], wordLimit: "ONE WORD", explanation: "'Chocolate was introduced to Europe in the sixteenth century.'" },
+      { id: 35, type: "completion", label: "In Europe, ___ was added to improve the taste.", answer: "sugar", acceptableAnswers: ["sugar"], wordLimit: "ONE WORD", explanation: "'Sugar was added to make it more palatable.'" },
+      { id: 36, type: "mcq", question: "What made chocolate cheaper during the Industrial Revolution?", options: ["A. New machinery enabling mass production", "B. Lower cacao taxes", "C. Government subsidies"], answer: "A", explanation: "'New machinery made mass production possible, dramatically reducing the price.'" },
+      { id: 37, type: "completion", label: "The first solid chocolate bar was produced in", answer: "1847", acceptableAnswers: ["1847"], wordLimit: "A NUMBER", explanation: "'In eighteen forty-seven, the first solid chocolate bar was produced in England.'" },
+      { id: 38, type: "completion", label: "Milk chocolate was invented by adding condensed", answer: "milk", acceptableAnswers: ["milk"], wordLimit: "ONE WORD", explanation: "'A Swiss manufacturer invented milk chocolate by adding condensed milk.'" },
+      { id: 39, type: "completion", label: "Chocolate contains a stimulant called", answer: "theobromine", acceptableAnswers: ["theobromine"], wordLimit: "ONE WORD", explanation: "'Chocolate contains a stimulant called theobromine, which is similar to caffeine.'" },
+      { id: 40, type: "mcq", question: "What does the lecturer say about chocolate's health benefits?", options: ["A. They are scientifically proven", "B. They are often exaggerated", "C. There are none at all"], answer: "B", explanation: "'I should emphasise that the health benefits are often exaggerated.'" }
+    ]
+  }
+];
+
+const LISTENING_BANDS = [
+  { min: 39, band: "9.0" }, { min: 37, band: "8.5" }, { min: 35, band: "8.0" },
+  { min: 32, band: "7.5" }, { min: 30, band: "7.0" }, { min: 26, band: "6.5" },
+  { min: 23, band: "6.0" }, { min: 18, band: "5.5" }, { min: 16, band: "5.0" },
+  { min: 13, band: "4.5" }, { min: 10, band: "4.0" }, { min: 0, band: "<4.0" }
+];
+function getListeningBand(score) { for (const b of LISTENING_BANDS) if (score >= b.min) return b.band; return "<4.0"; }
+
+function checkListeningAnswer(q, ua) {
+  if (!ua || ua.trim() === "") return false;
+  const u = ua.toLowerCase().trim();
+  if (q.acceptableAnswers) return q.acceptableAnswers.some(a => a.toLowerCase() === u);
+  return u === (q.answer || "").toLowerCase().trim();
+}
+
+function ListeningTestMode({ onExit }) {
+  const [phase, setPhase] = useState("start");
+  const [currentPart, setCurrentPart] = useState(0);
+  const [answers, setAnswers] = useState({});
+  const { speak, stop, speaking, supported } = useSpeech();
+
+  const part = listeningTestData[currentPart];
+  const allQuestions = listeningTestData.flatMap(p => p.questions);
+  const score = allQuestions.filter(q => checkListeningAnswer(q, answers[q.id])).length;
+  const band = getListeningBand(score);
+  const answeredCount = Object.values(answers).filter(v => v && v.trim() !== "").length;
+  const setAns = (id, val) => setAnswers(p => ({ ...p, [id]: val }));
+
+  if (phase === "start") return (
+    <div style={{ minHeight: "100vh", background: "#0F1117", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 40, fontFamily: "Georgia, serif", color: "#E8E0D0" }}>
+      <div style={{ maxWidth: 680, width: "100%" }}>
+        <button onClick={onExit} style={{ background: "transparent", border: "1px solid #2A2D3E", borderRadius: 8, padding: "8px 14px", cursor: "pointer", color: "#8A8070", fontFamily: "sans-serif", fontSize: 12, marginBottom: 32 }}>← Back to Listening Module</button>
+        <div style={{ textAlign: "center", marginBottom: 28 }}>
+          <div style={{ fontSize: 48, marginBottom: 12 }}>🎧</div>
+          <div style={{ fontSize: 11, letterSpacing: 3, color: "#B87CB8", fontFamily: "sans-serif", marginBottom: 8 }}>IELTS LISTENING</div>
+          <h1 style={{ fontSize: 32, margin: "0 0 10px", color: "#F0E8D0" }}>Full Listening Test</h1>
+          <p style={{ color: "#8A8070", fontSize: 14, lineHeight: 1.65, margin: 0 }}>4 parts · 40 questions · Audio narrated by your browser's speech engine. Answer as you listen, then submit for instant scoring and a band estimate.</p>
+        </div>
+        <div style={{ background: "#1A1D2E", border: "1px solid #2A2D3E", borderRadius: 10, padding: 16, marginBottom: 18 }}>
+          {listeningTestData.map(p => (
+            <div key={p.part} style={{ display: "flex", alignItems: "center", gap: 12, padding: "8px 0", borderBottom: p.part < 4 ? "1px solid #2A2D3E" : "none" }}>
+              <div style={{ width: 28, height: 28, borderRadius: "50%", background: "#B87CB822", border: "1px solid #B87CB8", color: "#B87CB8", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "sans-serif", fontSize: 13, fontWeight: "bold", flexShrink: 0 }}>{p.part}</div>
+              <div>
+                <div style={{ fontSize: 13, color: "#E8E0D0", fontFamily: "sans-serif" }}>Part {p.part} — Questions {p.questions[0].id}–{p.questions[p.questions.length - 1].id}</div>
+                <div style={{ fontSize: 11, color: "#6A6458" }}>{p.context}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div style={{ background: "#1E1A10", border: "1px solid #C8A95140", borderRadius: 10, padding: "12px 16px", marginBottom: 22 }}>
+          <span style={{ fontSize: 12, color: "#C8A951", fontFamily: "sans-serif", lineHeight: 1.6 }}>💡 In the real exam, audio plays ONCE. For practice, you may replay each part — but try a single listen first to simulate test conditions.{!supported && " ⚠️ Audio isn't supported in this browser; transcripts are provided so you can still practise."}</span>
+        </div>
+        <button onClick={() => setPhase("inprogress")} style={{ width: "100%", background: "linear-gradient(135deg, #B87CB8, #7A4A7A)", border: "none", borderRadius: 10, padding: 16, cursor: "pointer", color: "#000", fontFamily: "sans-serif", fontSize: 16, fontWeight: "bold" }}>Begin Listening Test →</button>
+      </div>
+    </div>
+  );
+
+  if (phase === "inprogress") {
+    const renderQ = (q) => {
+      const val = answers[q.id] || "";
+      const matchOpts = part.matchOptions;
+      if (q.type === "mcq") {
+        return (
+          <div key={q.id} style={{ background: "#13161F", border: `1px solid ${val ? "#B87CB8" : "#2A2D3E"}`, borderRadius: 8, padding: "12px 16px", marginBottom: 10 }}>
+            <div style={{ fontSize: 13, color: "#C8C0B0", marginBottom: 8, lineHeight: 1.5 }}><span style={{ color: "#B87CB8", fontWeight: "bold", fontFamily: "sans-serif", marginRight: 8 }}>Q{q.id}.</span>{q.question}</div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
+              {q.options.map(opt => {
+                const letter = opt[0];
+                const sel = val === letter;
+                return <button key={letter} onClick={() => setAns(q.id, letter)} style={{ background: sel ? "#B87CB822" : "#0F1117", border: `1px solid ${sel ? "#B87CB8" : "#2A2D3E"}`, borderRadius: 6, padding: "7px 12px", cursor: "pointer", color: sel ? "#E8E0D0" : "#B0A898", fontFamily: "Georgia, serif", fontSize: 13, textAlign: "left" }}>{opt}</button>;
+              })}
+            </div>
+          </div>
+        );
+      }
+      if (q.type === "matching") {
+        return (
+          <div key={q.id} style={{ background: "#13161F", border: `1px solid ${val ? "#B87CB8" : "#2A2D3E"}`, borderRadius: 8, padding: "10px 16px", marginBottom: 8, display: "flex", alignItems: "center", gap: 12 }}>
+            <span style={{ color: "#B87CB8", fontWeight: "bold", fontFamily: "sans-serif", fontSize: 13 }}>Q{q.id}</span>
+            <span style={{ fontSize: 14, color: "#C8C0B0", flex: 1, fontWeight: "bold" }}>{q.question}</span>
+            <select value={val} onChange={e => setAns(q.id, e.target.value)} style={{ background: "#0F1117", border: "1px solid #3A3D4E", borderRadius: 6, padding: "6px 10px", color: "#E8E0D0", fontFamily: "sans-serif", fontSize: 13, cursor: "pointer" }}>
+              <option value="">—</option>
+              {matchOpts.map(o => <option key={o.key} value={o.key}>{o.key}. {o.text}</option>)}
+            </select>
+          </div>
+        );
+      }
+      return (
+        <div key={q.id} style={{ background: "#13161F", border: `1px solid ${val ? "#B87CB8" : "#2A2D3E"}`, borderRadius: 8, padding: "10px 16px", marginBottom: 8 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
+            <span style={{ color: "#B87CB8", fontWeight: "bold", fontFamily: "sans-serif", fontSize: 13 }}>Q{q.id}</span>
+            <span style={{ fontSize: 14, color: "#C8C0B0" }}>{q.label}</span>
+            <input value={val} onChange={e => setAns(q.id, e.target.value)} placeholder="..." style={{ background: "#0F1117", border: "1px solid #3A3D4E", borderRadius: 6, padding: "7px 12px", color: "#E8E0D0", fontFamily: "Georgia, serif", fontSize: 14, outline: "none", minWidth: 140 }} />
+            {q.wordLimit && <span style={{ fontSize: 10, color: "#5A5448", fontFamily: "sans-serif" }}>({q.wordLimit})</span>}
+          </div>
+        </div>
+      );
+    };
+    return (
+      <div style={{ minHeight: "100vh", background: "#0F1117", fontFamily: "Georgia, serif", color: "#E8E0D0", display: "flex", flexDirection: "column" }}>
+        <div style={{ background: "#13161F", borderBottom: "1px solid #2A2D3E", padding: "12px 22px", display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: 6 }}>
+            {listeningTestData.map((p, i) => (
+              <button key={p.part} onClick={() => { stop(); setCurrentPart(i); }} style={{ background: currentPart === i ? "#B87CB820" : "transparent", border: `1px solid ${currentPart === i ? "#B87CB8" : "#2A2D3E"}`, borderRadius: 6, padding: "6px 14px", cursor: "pointer", color: currentPart === i ? "#B87CB8" : "#6A6458", fontFamily: "sans-serif", fontSize: 12, fontWeight: currentPart === i ? "bold" : "normal" }}>Part {p.part}</button>
+            ))}
+          </div>
+          <div style={{ marginLeft: "auto", fontSize: 12, color: "#8A8070", fontFamily: "sans-serif" }}>Answered: <strong style={{ color: "#B87CB8" }}>{answeredCount}</strong>/40</div>
+          <button onClick={() => { stop(); setPhase("submitted"); }} style={{ background: "linear-gradient(135deg, #B87CB8, #7A4A7A)", border: "none", borderRadius: 8, padding: "8px 18px", cursor: "pointer", color: "#000", fontFamily: "sans-serif", fontSize: 13, fontWeight: "bold" }}>Submit Test</button>
+        </div>
+        <div style={{ flex: 1, overflowY: "auto", padding: 24 }}>
+          <div style={{ maxWidth: 720, margin: "0 auto" }}>
+            <div style={{ marginBottom: 16 }}>
+              <div style={{ fontSize: 10, letterSpacing: 2, color: "#B87CB8", fontFamily: "sans-serif", textTransform: "uppercase", marginBottom: 4 }}>Part {part.part} · Questions {part.questions[0].id}–{part.questions[part.questions.length - 1].id}</div>
+              <div style={{ fontSize: 14, color: "#8A8070", fontStyle: "italic" }}>{part.context}</div>
+            </div>
+            <AudioPlayer transcript={part.transcript} color="#B87CB8" label={`Part ${part.part} Recording`} />
+            {part.matchOptions && (
+              <div style={{ background: "#1A1D2E", border: "1px solid #2A2D3E", borderRadius: 10, padding: 14, marginBottom: 14 }}>
+                <div style={{ fontSize: 11, letterSpacing: 1, color: "#8A8070", fontFamily: "sans-serif", marginBottom: 8 }}>OPTIONS (for matching questions)</div>
+                {part.matchOptions.map(o => <div key={o.key} style={{ fontSize: 13, color: "#B0A898", padding: "2px 0" }}><span style={{ color: "#B87CB8", fontWeight: "bold" }}>{o.key}.</span> {o.text}</div>)}
+              </div>
+            )}
+            {part.questions.map(renderQ)}
+            <div style={{ display: "flex", justifyContent: "space-between", marginTop: 18, gap: 12 }}>
+              {currentPart > 0 ? <button onClick={() => { stop(); setCurrentPart(currentPart - 1); }} style={{ background: "#1A1D2E", border: "1px solid #2A2D3E", borderRadius: 8, padding: "10px 18px", cursor: "pointer", color: "#C8C0B0", fontFamily: "sans-serif", fontSize: 12 }}>← Part {currentPart}</button> : <div />}
+              {currentPart < listeningTestData.length - 1 ? <button onClick={() => { stop(); setCurrentPart(currentPart + 1); }} style={{ background: "#B87CB8", border: "none", borderRadius: 8, padding: "10px 18px", cursor: "pointer", color: "#000", fontFamily: "sans-serif", fontSize: 12, fontWeight: "bold" }}>Part {currentPart + 2} →</button> : <button onClick={() => { stop(); setPhase("submitted"); }} style={{ background: "linear-gradient(135deg, #B87CB8, #7A4A7A)", border: "none", borderRadius: 8, padding: "10px 18px", cursor: "pointer", color: "#000", fontFamily: "sans-serif", fontSize: 12, fontWeight: "bold" }}>Submit Test ✓</button>}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // SUBMITTED
+  const bColor = band >= "7.0" ? "#5BAF73" : "#C8A951";
+  return (
+    <div style={{ minHeight: "100vh", background: "#0F1117", fontFamily: "Georgia, serif", color: "#E8E0D0" }}>
+      <div style={{ background: "#13161F", borderBottom: "1px solid #2A2D3E", padding: "14px 28px", display: "flex", alignItems: "center", gap: 12 }}>
+        <button onClick={onExit} style={{ background: "transparent", border: "1px solid #2A2D3E", borderRadius: 8, padding: "8px 14px", cursor: "pointer", color: "#8A8070", fontFamily: "sans-serif", fontSize: 12 }}>← Listening Module</button>
+        <span style={{ fontSize: 16, fontWeight: "bold", color: "#F0E8D0" }}>Test Results</span>
+      </div>
+      <div style={{ maxWidth: 760, margin: "0 auto", padding: 28 }}>
+        <div style={{ background: "linear-gradient(135deg, #1A1D2E, #13161F)", border: "2px solid #B87CB840", borderRadius: 16, padding: 28, textAlign: "center", marginBottom: 24 }}>
+          <div style={{ fontSize: 11, letterSpacing: 3, color: "#B87CB8", fontFamily: "sans-serif", marginBottom: 6 }}>YOUR SCORE</div>
+          <div style={{ fontSize: 52, fontWeight: "bold", color: "#F0E8D0", lineHeight: 1 }}>{score}<span style={{ fontSize: 26, color: "#6A6458" }}> / 40</span></div>
+          <div style={{ marginTop: 14, display: "inline-block", background: `${bColor}22`, border: `1px solid ${bColor}`, borderRadius: 10, padding: "8px 22px" }}>
+            <span style={{ fontSize: 12, color: "#8A8070", fontFamily: "sans-serif" }}>Estimated Band </span>
+            <span style={{ fontSize: 22, fontWeight: "bold", color: bColor, fontFamily: "sans-serif" }}>{band}</span>
+          </div>
+        </div>
+        {listeningTestData.map(p => {
+          const ps = p.questions.filter(q => checkListeningAnswer(q, answers[q.id])).length;
+          return (
+            <div key={p.part} style={{ background: "#13161F", border: "1px solid #2A2D3E", borderRadius: 12, padding: 18, marginBottom: 14 }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+                <span style={{ fontSize: 14, fontWeight: "bold", color: "#F0E8D0", fontFamily: "sans-serif" }}>Part {p.part}</span>
+                <span style={{ fontSize: 14, color: "#B87CB8", fontFamily: "sans-serif", fontWeight: "bold" }}>{ps} / {p.questions.length}</span>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                {p.questions.map(q => {
+                  const correct = checkListeningAnswer(q, answers[q.id]);
+                  const ua = answers[q.id] || "(blank)";
+                  return (
+                    <div key={q.id} style={{ display: "flex", gap: 10, fontSize: 12, padding: "6px 10px", background: "#0F1117", borderRadius: 6, borderLeft: `3px solid ${correct ? "#5BAF73" : "#CF6679"}` }}>
+                      <span style={{ color: "#B87CB8", fontWeight: "bold", fontFamily: "sans-serif", minWidth: 28 }}>Q{q.id}</span>
+                      <span style={{ color: correct ? "#5BAF73" : "#CF6679", fontFamily: "sans-serif", minWidth: 16 }}>{correct ? "✓" : "✗"}</span>
+                      <span style={{ color: "#B0A898", flex: 1 }}>
+                        Your answer: <strong style={{ color: "#E8E0D0" }}>{ua}</strong>
+                        {!correct && <span> · Correct: <strong style={{ color: "#5BAF73" }}>{q.answer}</strong></span>}
+                        <div style={{ color: "#6A6458", marginTop: 2, lineHeight: 1.5 }}>{q.explanation}</div>
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
+        <div style={{ display: "flex", gap: 12, justifyContent: "center", marginTop: 8 }}>
+          <button onClick={() => { setPhase("start"); setAnswers({}); setCurrentPart(0); }} style={{ background: "#1A1D2E", border: "1px solid #2A2D3E", borderRadius: 10, padding: "12px 28px", cursor: "pointer", color: "#C8C0B0", fontFamily: "sans-serif", fontSize: 13 }}>Retake Test</button>
+          <button onClick={onExit} style={{ background: "linear-gradient(135deg, #B87CB8, #7A4A7A)", border: "none", borderRadius: 10, padding: "12px 28px", cursor: "pointer", color: "#000", fontFamily: "sans-serif", fontSize: 13, fontWeight: "bold" }}>Back to Module</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+// ============================================================
+// SPEAKING CURRICULUM DATA
+// ============================================================
+const speakingCurriculum = [
+  {
+    id: "s-overview", icon: "📋", title: "Overview & Format", subtitle: "How the interview works", color: "#C8A951",
+    content: {
+      intro: "The IELTS Speaking test is a face-to-face interview with a certified examiner lasting 11–14 minutes. It is recorded and divided into three parts. The test is identical for Academic and General Training candidates, and is assessed on four equally weighted criteria. It measures your ability to communicate naturally — not your knowledge or opinions.",
+      sections: [
+        { heading: "The Three Parts", body: "Part 1 — Introduction & Interview (4–5 min): the examiner asks general questions about familiar topics such as your home, work, studies, and interests. Part 2 — Long Turn (3–4 min): you receive a cue card, prepare for 1 minute, then speak for 1–2 minutes. Part 3 — Discussion (4–5 min): the examiner asks abstract, deeper questions connected to the Part 2 topic." },
+        { heading: "The Four Assessment Criteria", body: "Each contributes 25% to your Speaking band: (1) Fluency & Coherence — speaking smoothly and logically without unnatural pauses. (2) Lexical Resource — range and accuracy of vocabulary. (3) Grammatical Range & Accuracy — variety and correctness of grammar. (4) Pronunciation — clarity and natural use of stress, rhythm, and intonation." },
+        { heading: "What the Examiner Is (and Isn't) Looking For", body: "The examiner assesses HOW you speak, not WHAT you say. There are no right or wrong opinions, and you are never marked on the truth or quality of your ideas. You can invent details, exaggerate, or take any position — what matters is that you express yourself fluently, accurately, and clearly. Memorised answers are penalised, so respond naturally." }
+      ],
+      tips: [
+        "You are assessed on HOW you speak, not on your opinions or knowledge — feel free to invent details to keep talking.",
+        "The whole test is only 11–14 minutes — relax, be natural, and treat it like a real conversation.",
+        "Never memorise scripted answers — examiners are trained to spot them and will penalise rehearsed responses.",
+        "Extend every answer — one-word or one-sentence replies give the examiner nothing to assess.",
+        "It's fine to ask the examiner to repeat a question ('Could you say that again, please?') — but don't overuse it."
+      ]
+    }
+  },
+  {
+    id: "s-part1", icon: "💬", title: "Part 1: Introduction & Interview", subtitle: "Warm up with familiar topics", color: "#5B8DB8",
+    content: {
+      intro: "Part 1 lasts 4–5 minutes. After confirming your identity, the examiner asks questions on two or three familiar topics — your home town, work or studies, hobbies, daily routine, food, weather, and so on. The goal is to settle in and show you can talk comfortably about everyday subjects with extended, natural answers.",
+      sections: [
+        { heading: "Extend Your Answers", body: "A common mistake is answering too briefly. 'Do you like cooking?' should never be just 'Yes.' Instead: 'Yes, I really enjoy it, especially at weekends when I have time to experiment with new recipes. I find it relaxing after a busy week.' Use the answer-plus-reason-plus-example pattern: state your answer, give a reason, then add a detail or example." },
+        { heading: "Topics to Prepare", body: "Common Part 1 themes include: your home/accommodation, hometown, work or studies, free time and hobbies, food, music, sports, technology, travel, weather, and daily routines. You can't predict the exact questions, but practising fluent answers on these everyday subjects builds the confidence to respond naturally to whatever comes up." },
+        { heading: "Keep It Natural and Conversational", body: "Part 1 is the easiest part — don't over-complicate it with rehearsed 'big' vocabulary that sounds unnatural. Speak as you would in a friendly conversation, but in full, developed sentences. Use a range of tenses naturally: present ('I usually...'), past ('When I was younger...'), and future ('I'm hoping to...')." }
+      ],
+      tips: [
+        "Never give one-word answers — always extend with a reason and an example (the 'answer + because + for example' pattern).",
+        "Don't memorise — but DO practise fluent answers on common topics: home, work/study, hobbies, food, travel.",
+        "Use a natural mix of tenses to show grammatical range: 'I used to...', 'these days I...', 'I'm planning to...'",
+        "Avoid forcing rare vocabulary in Part 1 — natural, accurate speech scores better than awkward 'big words'.",
+        "Smile and speak at a relaxed pace — Part 1 is your chance to settle nerves and build momentum."
+      ]
+    }
+  },
+  {
+    id: "s-part2", icon: "🗣️", title: "Part 2: The Long Turn", subtitle: "Speak for 1–2 minutes solo", color: "#7CB87C",
+    content: {
+      intro: "In Part 2, the examiner gives you a cue card with a topic and three or four bullet points. You have 1 minute to prepare (with paper and pencil to make notes), then you must speak for 1–2 minutes without interruption. This is the part most candidates fear, but with a clear structure and good use of the preparation minute, it becomes very manageable.",
+      sections: [
+        { heading: "Use Your Preparation Minute Wisely", body: "Don't write full sentences — jot down keywords for each bullet point. A useful approach is to plan a mini-story: who/what, when/where, why it matters, and how you felt. Note 2–3 keywords per bullet. This gives you a roadmap so you never run out of things to say. Aim to cover all bullet points, but it's fine to spend more time on the ones you find easiest to expand." },
+        { heading: "Structure Your Long Turn", body: "Open by introducing the topic ('I'd like to talk about...'). Then address each bullet point in turn, expanding each with details, reasons, and examples. Use sequencing language ('Firstly...', 'Another thing is...', 'Finally...'). Save the last bullet (often 'explain why' or 'how you felt') for the end, as it naturally lets you add personal reflection and fill the full two minutes." },
+        { heading: "Keep Talking Until Stopped", body: "Speak until the examiner says 'Thank you' — don't stop early. If you finish the bullet points with time left, add more detail, a comparison, or how things might be different in future. Running out of words after 40 seconds hurts your fluency score. It's better to keep developing your ideas than to fall silent and wait." }
+      ],
+      tips: [
+        "In your prep minute, write KEYWORDS only — never full sentences — covering each bullet point.",
+        "Plan it like a story: set the scene, give details, then end with your feelings or why it mattered.",
+        "Use sequencing phrases to structure your turn: 'To begin with...', 'On top of that...', 'In the end...'",
+        "Keep going until told to stop — if you run dry, add examples, comparisons, or future possibilities.",
+        "Don't panic if the topic is unfamiliar — you can invent the entire story; you're marked on language, not truth."
+      ]
+    }
+  },
+  {
+    id: "s-part3", icon: "🧩", title: "Part 3: Discussion", subtitle: "Abstract, in-depth questions", color: "#B87CB8",
+    content: {
+      intro: "Part 3 lasts 4–5 minutes and develops the Part 2 theme into a broader, more abstract discussion. The examiner asks deeper questions about society, trends, opinions, and the future. This is where you demonstrate your ability to analyse, speculate, compare, and justify — the part that most distinguishes Band 7+ candidates from the rest.",
+      sections: [
+        { heading: "Think Broadly, Not Personally", body: "Unlike Part 1, Part 3 questions are abstract and general, not about you. 'Why do people enjoy travelling?' wants ideas about people in general, society, and trends — not just your own experience. Discuss different viewpoints, give reasons, and consider causes and effects. Treat each question as a mini-discussion topic rather than a personal question." },
+        { heading: "Develop and Justify Your Ideas", body: "Use the PEER approach: make a Point, Explain it, give an Example, then add a Reason or Result. For example: 'I think technology has changed how we communicate. People now rely on messaging rather than calls — for instance, most of my friends prefer texting. This is probably because it's quicker and less intrusive.' Developing ideas this fully is the key to a high Fluency & Coherence score." },
+        { heading: "Use Speculative and Comparative Language", body: "Part 3 rewards higher-level structures: speculation ('It might be the case that...', 'Perhaps...', 'I'd imagine...'), comparison ('Whereas in the past...', 'Compared to a generation ago...'), and concession ('While that's true, on the other hand...'). These show grammatical range and the ability to handle abstract ideas — both essential for Band 7 and above." }
+      ],
+      tips: [
+        "Answer about people and society IN GENERAL, not just yourself — Part 3 is abstract, not personal.",
+        "Develop each answer fully with the PEER method: Point, Explain, Example, Reason/Result.",
+        "Use speculative language to handle uncertainty: 'It could be argued that...', 'I'd imagine...', 'Perhaps...'",
+        "Show range with comparisons and contrasts: 'Whereas in the past...', 'Compared with...', 'On the other hand...'",
+        "It's fine to think briefly before answering — use fillers like 'That's an interesting question...' to buy a second."
+      ]
+    }
+  },
+  {
+    id: "s-fluency", icon: "🌊", title: "Fluency & Coherence", subtitle: "Speak smoothly and logically", color: "#B87C7C",
+    content: {
+      intro: "Fluency is the ability to speak at a natural pace without excessive hesitation; coherence is connecting your ideas logically so they're easy to follow. Together they form 25% of your score. Crucially, fluency does NOT mean speaking fast — it means speaking smoothly, with ideas that flow in a logical order.",
+      sections: [
+        { heading: "Reduce Unnatural Hesitation", body: "Long silent pauses and repeated 'um... er... um' hurt your fluency score. Some hesitation is natural, but if you're searching for a word, use a natural filler phrase instead of falling silent: 'Let me think...', 'That's a good question...', 'What I mean is...'. These keep you talking while you gather your thoughts, which sounds far more fluent than dead silence." },
+        { heading: "Use Cohesive Devices Naturally", body: "Link your ideas with discourse markers: adding ('also', 'furthermore', 'on top of that'), contrasting ('however', 'although', 'on the other hand'), giving reasons ('because', 'since', 'the reason is'), and sequencing ('first of all', 'then', 'finally'). Used naturally, these make your speech coherent. But don't overuse them mechanically — natural conversation doesn't connect every single sentence." },
+        { heading: "Self-Correction Is Fine", body: "Correcting yourself naturally ('I goed — sorry, I went...') is a sign of awareness and does NOT lower your score significantly, as long as it's quick and doesn't disrupt flow. What hurts is freezing, long silences, or losing the thread of your idea. Keep your sentences moving forward rather than repeatedly restarting them." }
+      ],
+      tips: [
+        "Fluency is about SMOOTHNESS, not speed — speaking too fast often causes more errors and less clarity.",
+        "Replace silent pauses with natural fillers: 'Well...', 'Let me see...', 'That's an interesting point...'",
+        "Link ideas logically with connectors, but don't overuse them — natural speech isn't mechanically joined.",
+        "If you make a small error, a quick self-correction is fine — don't dwell on it or restart the whole sentence.",
+        "Practise speaking on a topic for 2 minutes daily — building the habit of continuous speech is the best fluency training."
+      ]
+    }
+  },
+  {
+    id: "s-lexical", icon: "📚", title: "Lexical Resource", subtitle: "Range, precision, idiom", color: "#7CB8B8",
+    content: {
+      intro: "Lexical Resource measures the range and accuracy of your vocabulary — including less common words, collocations, and idiomatic language used appropriately. It is 25% of your score. The key is using a variety of precise, natural vocabulary, not cramming in 'difficult' words that don't fit the context.",
+      sections: [
+        { heading: "Precision and Variety Over Difficulty", body: "Band 7+ speakers use a wide range of vocabulary flexibly. Instead of 'good' repeatedly, vary it: 'enjoyable', 'worthwhile', 'fascinating', 'beneficial'. Instead of 'a lot of', try 'a great deal of', 'numerous', 'plenty of'. But always choose words that genuinely fit — an awkwardly forced rare word scores worse than a well-chosen common one." },
+        { heading: "Collocations and Natural Phrases", body: "Native-like speech uses words that naturally go together: 'make a decision', 'a close friend', 'heavy rain', 'do my best', 'a strong interest in'. Learning collocations rather than isolated words makes your speech sound far more natural and boosts your Lexical Resource score. Topic-specific phrases ('strike a balance', 'broaden your horizons') used naturally also impress examiners." },
+        { heading: "Idiomatic Language — Use With Care", body: "The Band 7+ descriptor mentions 'some awareness of style and collocation' and idiomatic language. Natural idioms like 'once in a blue moon', 'it's a piece of cake', or 'to be honest' can lift your score — IF used correctly and naturally. A misused or forced idiom sounds worse than none. Only use idioms you're fully confident with." }
+      ],
+      tips: [
+        "Vary your vocabulary — avoid repeating 'good', 'nice', 'a lot' by building synonym families for common words.",
+        "Learn words in COLLOCATIONS ('make progress', 'a major issue') — it sounds far more natural than isolated words.",
+        "Paraphrase when you don't know a word: describe it ('the thing you use to...') rather than freezing.",
+        "Use a few natural idioms only if you're confident — a forced or misused idiom hurts more than it helps.",
+        "Topic-specific phrases impress: 'work-life balance', 'broaden horizons', 'a double-edged sword' (used correctly)."
+      ]
+    }
+  },
+  {
+    id: "s-grammar", icon: "⚙️", title: "Grammatical Range & Accuracy", subtitle: "Variety with control", color: "#8B7CB8",
+    content: {
+      intro: "This criterion (25%) measures both the RANGE of grammatical structures you use and how ACCURATELY you use them. High scorers use a flexible mix of simple and complex sentences with few errors. The goal is controlled variety — attempting complex structures, but using them correctly.",
+      sections: [
+        { heading: "Mix Simple and Complex Structures", body: "Don't speak only in short simple sentences. Demonstrate range with complex structures: relative clauses ('the place where I grew up'), conditionals ('if I had more time, I would...'), and subordinate clauses ('although it was difficult, I enjoyed it'). A mix of accurate simple and complex sentences signals a higher band than uniformly simple speech." },
+        { heading: "Use a Range of Tenses Accurately", body: "Naturally moving between tenses shows grammatical range: present simple/continuous, past simple, present perfect ('I've been learning...'), past continuous, and future forms ('I'm going to', 'I'll probably'). In Part 2 especially, narrating a past experience while reflecting in the present demonstrates strong tense control. Accuracy matters — wrong tenses are a common error that caps scores." },
+        { heading: "Accuracy Is About Frequency, Not Perfection", body: "Even Band 8 speakers make occasional errors — perfection isn't required. What matters is producing a high proportion of error-free sentences and not making errors that obscure meaning. If you're unsure of a complex structure, it's better to use a simpler one accurately than a complex one full of mistakes. Controlled risk-taking is rewarded." }
+      ],
+      tips: [
+        "Use complex sentences — relative clauses, conditionals, 'although/while/because' — not just short simple ones.",
+        "Show off your tenses: blend past, present perfect, and future naturally, especially when telling a story in Part 2.",
+        "Conditionals impress in Part 3: 'If governments invested more, then...' demonstrates strong range.",
+        "Don't aim for perfection — aim for frequent error-free sentences and errors that don't block meaning.",
+        "If a complex structure feels risky, use a simpler accurate one instead — accuracy is rewarded over ambition gone wrong."
+      ]
+    }
+  },
+  {
+    id: "s-pronunciation", icon: "🔊", title: "Pronunciation", subtitle: "Clarity, stress & intonation", color: "#C85B5B",
+    content: {
+      intro: "Pronunciation (25%) is about being clearly understood and using the features of natural English speech — word stress, sentence stress, rhythm, and intonation. Importantly, you are NOT required to have a British or American accent. A clear accent of any kind is perfectly acceptable as long as your speech is easy to understand.",
+      sections: [
+        { heading: "You Don't Need a 'Native' Accent", body: "A common myth is that you must sound British or American. This is false. Speakers with strong regional accents from anywhere in the world can achieve Band 9. What matters is intelligibility — can the examiner easily understand you? Focus on clarity, not on imitating a particular accent. Keep your natural accent; just make sure individual sounds and words are clear." },
+        { heading: "Word and Sentence Stress", body: "English uses stress to convey meaning. Word stress: 'PHOtograph' vs 'phoTOGrapher' — stressing the wrong syllable can make a word hard to understand. Sentence stress: emphasising the important words ('I REALLY enjoyed it') makes speech sound natural and helps the listener follow your meaning. Stressing the right words is a key feature examiners listen for." },
+        { heading: "Intonation and Rhythm", body: "Intonation is the rise and fall of your voice. Flat, monotone speech is hard to listen to and sounds unnatural; varied intonation conveys interest, questions, and emphasis. English has a natural rhythm where stressed syllables are spaced fairly evenly. Speaking in 'thought groups' — short meaningful chunks with small pauses — makes you sound far more fluent and clear." }
+      ],
+      tips: [
+        "You do NOT need a British or American accent — clarity and being easily understood is what's assessed.",
+        "Learn word stress for common words ('comFORtable', 'phoTOGraphy') — wrong stress can obscure meaning.",
+        "Stress the important content words in a sentence to sound natural and guide the listener.",
+        "Avoid a flat monotone — varied intonation (rising/falling) makes speech clearer and more engaging.",
+        "Speak in 'thought groups' — short chunks with tiny pauses — rather than a rushed, unbroken stream."
+      ]
+    }
+  },
+  {
+    id: "s-mistakes", icon: "⚠️", title: "Common Mistakes & Strategies", subtitle: "Avoid the traps", color: "#B8A47C",
+    content: {
+      intro: "Many capable speakers lose marks to avoidable mistakes — memorising answers, giving short replies, or panicking when they don't understand. Knowing these traps and the strategies to handle tricky moments can lift your score significantly, often by a full band.",
+      sections: [
+        { heading: "The Biggest Mistakes to Avoid", body: "Memorised answers (examiners spot and penalise them). One-word or very short answers (give nothing to assess). Speaking too fast (causes errors and unclear speech). Going completely silent when stuck. Trying to use 'difficult' words incorrectly. Repeating the question word-for-word to fill time. Answering a Part 3 question as if it were personal (Part 1) rather than abstract." },
+        { heading: "When You Don't Understand", body: "It's perfectly acceptable to ask for clarification — this is a communication skill, not a weakness. Use: 'Sorry, could you repeat that?', 'I'm not sure I understand — do you mean...?', or 'Could you rephrase the question?'. In Part 3, you may also ask the examiner to explain an unfamiliar word. Just don't do it for every question, and never ask for the answer itself." },
+        { heading: "Buying Thinking Time Gracefully", body: "When you need a moment to think, don't freeze — use natural 'stalling' phrases: 'That's a really interesting question...', 'Let me think about that for a second...', 'I've never really considered that, but I suppose...'. These sound natural, keep you fluent, and give your brain time to form a good answer. They're a hallmark of confident, high-scoring speakers." }
+      ],
+      tips: [
+        "Never memorise whole answers — examiners are trained to detect and penalise rehearsed, unnatural responses.",
+        "When stuck, buy time naturally: 'That's a great question, let me think...' instead of going silent.",
+        "It's fine to ask for a question to be repeated or rephrased — just don't do it for every single question.",
+        "Don't repeat the question word-for-word to fill time — examiners notice and it wastes your speaking opportunity.",
+        "If you use a word wrong and notice, correct it briefly and move on — don't let one slip derail your whole answer."
+      ]
+    }
+  },
+  {
+    id: "s-band", icon: "🎯", title: "Band Scores & Final Tips", subtitle: "What each band requires", color: "#5B8DB8",
+    content: {
+      intro: "Your Speaking band is the average of the four criteria, each scored from 0–9. Understanding what separates Band 6, 7, and 8 gives you concrete targets. Most candidates plateau at Band 6 not from lack of ability, but because they don't know precisely what the next band requires.",
+      sections: [
+        { heading: "Band 6 vs Band 7 — The Key Leap", body: "Band 6: willing to speak at length, though coherence may slip; uses a mix of vocabulary and grammar with errors that rarely block meaning. Band 7: speaks at length without noticeable effort; uses a range of connectives flexibly; uses less common vocabulary and idiom with some inaccuracies; produces a good range of complex structures with frequent error-free sentences. The leap to 7 is about FLEXIBILITY, EXTENDED answers, and more frequent accuracy." },
+        { heading: "Reaching Band 8", body: "Band 8: speaks fluently with only occasional repetition or self-correction; develops topics coherently and appropriately; uses a wide vocabulary resource readily and flexibly, with skilful use of less common items; uses a wide range of structures flexibly with the majority of sentences error-free. At this level, language feels effortless and natural, with errors rare and minor." },
+        { heading: "Final Test-Day Strategy", body: "Arrive relaxed and treat it as a friendly conversation. Extend every answer with reasons and examples. Don't worry about small mistakes — keep the conversation flowing. Vary your vocabulary and grammar deliberately but naturally. Speak clearly at a comfortable pace. Show personality and engagement — examiners respond well to candidates who sound genuinely interested in the conversation." }
+      ],
+      tips: [
+        "The Band 6→7 leap is about EXTENDED, flexible answers and more frequent error-free speech — develop every response.",
+        "Target a balance across all four criteria — a weakness in one (e.g. pronunciation) drags down your average.",
+        "Record yourself answering practice questions and listen back — you'll quickly spot hesitation and repetition.",
+        "Treat the test as a conversation, not an interrogation — engagement and natural personality help your fluency.",
+        "Don't chase perfection — fluent, developed, clear communication with minor errors beats hesitant 'perfect' speech."
+      ]
+    }
+  }
+];
+
+// ============================================================
+// SPEAKING EXERCISES DATA
+// (quiz topics + "speaking" practice topics with AI-able prompts & model answers)
+// ============================================================
+const speakingExercises = {
+  "s-overview": {
+    type: "quiz", title: "Format & Rules Quiz",
+    description: "Test your knowledge of the Speaking test structure and assessment.",
+    questions: [
+      { id: 1, question: "How long does the IELTS Speaking test last?", options: ["5–7 minutes", "11–14 minutes", "20–25 minutes", "30 minutes"], correct: 1, explanation: "The Speaking test lasts 11–14 minutes and is conducted face-to-face with an examiner across three parts." },
+      { id: 2, question: "Which is NOT one of the four Speaking assessment criteria?", options: ["Fluency & Coherence", "Lexical Resource", "Pronunciation", "Accuracy of Facts"], correct: 3, explanation: "The four criteria are Fluency & Coherence, Lexical Resource, Grammatical Range & Accuracy, and Pronunciation. The truth of your statements is never assessed." },
+      { id: 3, question: "Are you marked on whether your opinions or facts are correct?", options: ["Yes, accuracy of ideas matters", "No — only HOW you speak is assessed", "Only in Part 3", "Only if you make things up"], correct: 1, explanation: "You are assessed on your English, not your knowledge or opinions. You may invent details freely to keep speaking." },
+      { id: 4, question: "What happens if you give a memorised, scripted answer?", options: ["It earns extra marks", "It is penalised — examiners are trained to detect it", "It has no effect", "It is required"], correct: 1, explanation: "Memorised answers are penalised. Examiners can detect rehearsed language, which doesn't reflect genuine communicative ability." },
+      { id: 5, question: "Is the Speaking test different for Academic and General Training?", options: ["Yes, completely", "No, it is identical for both", "Only Part 2 differs", "Academic is longer"], correct: 1, explanation: "Like Listening, the Speaking test is identical for Academic and General Training candidates." }
+    ]
+  },
+  "s-part1": {
+    type: "speaking", title: "Part 1 Practice: Familiar Topics",
+    description: "Answer these Part 1 questions out loud (or type). Aim to extend each answer with a reason and an example. Press 🎤 to record your spoken answer, then compare with the model answer.",
+    questions: [
+      { id: 1, prompt: "Let's talk about your home town. Where are you from, and what is it like?", model: "I'm originally from a small coastal town in the south of my country. It's a fairly quiet, relaxed place, known mainly for its beautiful beaches and seafood. I really like it because it's peaceful and close to nature, although I have to admit it can be a little boring for young people, since there isn't much nightlife or entertainment." },
+      { id: 2, prompt: "Do you work or are you a student? Tell me about it.", model: "At the moment I'm a student — I'm studying business management at university. I chose it because I've always been interested in how companies operate and how decisions are made. It can be quite demanding, with a lot of group projects and presentations, but I find it rewarding, and I'm hoping it'll open up good career opportunities for me in the future." },
+      { id: 3, prompt: "What do you like to do in your free time?", model: "In my free time I'm quite into outdoor activities, especially hiking and cycling. I try to get out into the countryside most weekends because it helps me unwind after a busy week. I also enjoy reading, mainly novels and the occasional biography. I suppose I like a balance between being active and having some quiet downtime." },
+      { id: 4, prompt: "Do you prefer cooking at home or eating out? Why?", model: "Honestly, it depends on my mood. During the week I usually cook at home because it's cheaper and healthier, and I actually find chopping vegetables quite therapeutic after work. But at the weekend I love eating out with friends — it's more about the social side, trying new cuisines and not having to wash up afterwards." }
+    ]
+  },
+  "s-part2": {
+    type: "speaking", title: "Part 2 Practice: The Cue Card",
+    description: "You have 1 minute to prepare, then speak for 1–2 minutes. Use the timer, make notes, then press 🎤 to record. Compare your long turn with the model answer afterwards.",
+    cueCard: {
+      topic: "Describe a skill you would like to learn.",
+      bullets: [
+        "What the skill is",
+        "Why you want to learn it",
+        "How you would learn it",
+        "and explain how this skill would benefit you."
+      ]
+    },
+    prepSeconds: 60,
+    questions: [
+      { id: 1, prompt: "Speak for 1–2 minutes on the cue card topic above.", model: "I'd like to talk about a skill I've wanted to learn for a long time, which is playing the piano. I've always been drawn to music, and there's something about the piano in particular that I find really elegant and expressive. The main reason I want to learn it is that I think it would be a wonderful way to relax and express myself creatively, especially since most of my day is spent on a computer doing fairly logical work. As for how I'd learn it, I'd probably start with online tutorials to get the basics, but I think I'd eventually want a proper teacher, because having someone correct your technique early on is really important. I'd try to practise for maybe half an hour a day. In terms of how it would benefit me, I believe learning an instrument is great for the brain — it improves concentration and memory — and on top of that, it would give me a genuine sense of achievement. Ultimately, I'd love to be able to sit down and play a piece I really enjoy, just for my own pleasure." }
+    ]
+  },
+  "s-part3": {
+    type: "speaking", title: "Part 3 Practice: Discussion",
+    description: "These are abstract Part 3 questions. Answer about people and society in general, developing each idea fully. Press 🎤 to record, then compare with the model answer.",
+    questions: [
+      { id: 1, prompt: "Why do you think some people find it difficult to learn new skills as adults?", model: "That's an interesting question. I'd say there are several reasons. Firstly, adults simply have less free time — they're often juggling work and family responsibilities, so finding the hours to practise is genuinely hard. Secondly, there's a psychological element: as adults, we're used to being competent, so being a beginner again can feel uncomfortable or even embarrassing. Children, on the other hand, aren't afraid of making mistakes. I'd also imagine that the brain becomes a little less flexible with age, although I think motivation matters far more than age in the end." },
+      { id: 2, prompt: "Do you think schools should focus more on practical skills or academic knowledge?", model: "I think there needs to be a balance, but personally I'd lean towards giving practical skills more attention than they currently receive. Academic knowledge is obviously important — it develops critical thinking and gives students a foundation. However, many young people leave school without knowing how to manage money, cook a meal, or handle basic everyday tasks. So while I wouldn't want to sacrifice academic subjects, I do think integrating more life skills would better prepare students for the real world. Ideally, the two should complement each other rather than compete." },
+      { id: 3, prompt: "How might the way people learn skills change in the future?", model: "I'd imagine technology will play an even bigger role than it does now. We're already seeing online courses and tutorials replacing traditional classes for many skills, and I think that trend will only accelerate. Things like virtual reality could let people practise skills — surgery, for example, or even cooking — in a safe, simulated environment. Artificial intelligence might also offer personalised tutoring, adapting to each learner's pace. That said, I suspect that for certain skills, especially social or creative ones, human guidance will always be valuable, so I don't think classrooms will disappear entirely." }
+    ]
+  },
+  "s-fluency": {
+    type: "quiz", title: "Fluency & Coherence Quiz",
+    description: "Test your understanding of what fluency and coherence really mean.",
+    questions: [
+      { id: 1, question: "What does 'fluency' mainly refer to in IELTS Speaking?", options: ["Speaking as fast as possible", "Speaking smoothly without unnatural pauses", "Using the most difficult words", "Having a native accent"], correct: 1, explanation: "Fluency is about smoothness and natural flow — NOT speed. Speaking too fast often causes more errors and reduced clarity." },
+      { id: 2, question: "When you're searching for a word, the best thing to do is:", options: ["Go completely silent until you find it", "Use a natural filler like 'Let me think...'", "Switch to your native language", "Repeat the last word many times"], correct: 1, explanation: "Natural fillers ('Let me think...', 'That's a good question...') keep you talking and sound far more fluent than silence." },
+      { id: 3, question: "Does a quick, natural self-correction hurt your score?", options: ["Yes, severely", "No — it shows awareness and is fine if quick", "Only in Part 2", "It doubles your errors"], correct: 1, explanation: "A quick self-correction signals language awareness and doesn't significantly harm your score. Freezing or long silences hurt far more." },
+      { id: 4, question: "Which best demonstrates 'coherence'?", options: ["Speaking very loudly", "Connecting ideas logically with appropriate linking words", "Using as many idioms as possible", "Answering in single words"], correct: 1, explanation: "Coherence is organising and linking your ideas logically so they're easy to follow — using connectives naturally." },
+      { id: 5, question: "What is a sign of WEAK coherence?", options: ["Using 'however' and 'because' naturally", "Ideas that jump around with no logical connection", "Giving examples", "Speaking in full sentences"], correct: 1, explanation: "Disorganised ideas that don't connect logically signal weak coherence. Your points should follow a clear, logical sequence." }
+    ]
+  },
+  "s-lexical": {
+    type: "quiz", title: "Lexical Resource Quiz",
+    description: "Test your knowledge of vocabulary range, collocations, and idiom in speaking.",
+    questions: [
+      { id: 1, question: "Which response shows the BEST lexical resource?", options: ["It was good. Really good. Very good.", "It was absolutely fascinating — genuinely one of the most rewarding experiences I've had.", "It was nice and good and fine.", "It was good, I think it was good."], correct: 1, explanation: "Varied, precise vocabulary ('fascinating', 'rewarding') used naturally demonstrates strong lexical resource. Repeating 'good' shows limited range." },
+      { id: 2, question: "Which is a correct collocation?", options: ["do a decision", "make a decision", "have a decision", "take a decision quickly only"], correct: 1, explanation: "'Make a decision' is the natural collocation. Learning words in their natural partnerships makes speech sound fluent." },
+      { id: 3, question: "You don't know the exact word for something. The best strategy is to:", options: ["Stop speaking entirely", "Paraphrase — describe it in other words", "Use a word from your own language", "Repeat the question"], correct: 1, explanation: "Paraphrasing ('the thing you use to...') keeps you talking and actually demonstrates lexical flexibility — a positive skill." },
+      { id: 4, question: "Using idioms in the Speaking test:", options: ["Always boosts your score", "Helps ONLY if used correctly and naturally", "Is forbidden", "Is required for Band 6"], correct: 1, explanation: "Natural, correctly-used idioms can raise your score, but a forced or misused idiom sounds worse than none at all." },
+      { id: 5, question: "Which approach to vocabulary scores highest?", options: ["Cramming in as many rare words as possible", "Using precise, varied words that genuinely fit the context", "Only using very simple words to avoid errors", "Repeating impressive words often"], correct: 1, explanation: "Precision and appropriate variety beat difficulty. A well-chosen common word scores better than an awkwardly forced rare one." }
+    ]
+  },
+  "s-grammar": {
+    type: "quiz", title: "Grammatical Range Quiz",
+    description: "Test your understanding of grammatical range and accuracy in speaking.",
+    questions: [
+      { id: 1, question: "Which response best demonstrates grammatical RANGE?", options: ["I like it. It is good. I go there.", "I really enjoy it because, although it can be challenging at times, it's the kind of place where I always feel relaxed.", "I like. Is good. I going.", "It good. I like much."], correct: 1, explanation: "The second uses a complex sentence with 'because', 'although', and a relative clause ('where I...') — demonstrating range and control." },
+      { id: 2, question: "Which structure is especially useful for impressing examiners in Part 3?", options: ["Single-word answers", "Conditionals ('If governments invested more, then...')", "Repeating the question", "Only present simple"], correct: 1, explanation: "Conditionals let you speculate and discuss abstract scenarios — ideal for the analytical questions in Part 3." },
+      { id: 3, question: "Does achieving a high band require perfect, error-free grammar?", options: ["Yes, zero errors", "No — frequent error-free sentences and errors that don't block meaning", "Only in Part 1", "Perfection is required for Band 6"], correct: 1, explanation: "Even Band 8 allows occasional errors. The key is a high proportion of error-free sentences, not perfection." },
+      { id: 4, question: "How can you show tense range when telling a Part 2 story?", options: ["Use only the past tense throughout", "Blend past, present perfect, and present naturally as you narrate and reflect", "Avoid all past tenses", "Use future tense only"], correct: 1, explanation: "Narrating a past event while reflecting in the present ('I went... and it's something I've never forgotten') shows strong tense control." },
+      { id: 5, question: "If you're unsure of a complex structure mid-sentence, it's best to:", options: ["Attempt it anyway with many errors", "Use a simpler structure accurately instead", "Stop speaking", "Switch topics entirely"], correct: 1, explanation: "Accuracy is rewarded. A simple correct sentence beats a complex one riddled with errors that obscure your meaning." }
+    ]
+  },
+  "s-pronunciation": {
+    type: "quiz", title: "Pronunciation Quiz",
+    description: "Test your understanding of pronunciation features and common myths.",
+    questions: [
+      { id: 1, question: "Do you need a British or American accent to score Band 9 in pronunciation?", options: ["Yes, a native accent is required", "No — clarity and intelligibility matter, not a specific accent", "Only British is accepted", "Only American is accepted"], correct: 1, explanation: "This is a common myth. Speakers with any accent can reach Band 9 — what matters is being clearly understood." },
+      { id: 2, question: "What is 'word stress'?", options: ["Speaking loudly", "Emphasising the correct syllable in a word (e.g. PHOto-graph)", "Speaking quickly", "Pausing between words"], correct: 1, explanation: "Word stress is emphasising the right syllable. Wrong stress (e.g. 'phoTOgraph') can make a word hard to understand." },
+      { id: 3, question: "Why is varied intonation important?", options: ["It isn't — monotone is fine", "It makes speech clearer, more natural, and easier to follow", "It lets you speak faster", "It replaces grammar"], correct: 1, explanation: "Flat, monotone speech is hard to follow. Varied intonation conveys meaning, emphasis, and engagement." },
+      { id: 4, question: "What does speaking in 'thought groups' mean?", options: ["Thinking before every word", "Breaking speech into short meaningful chunks with small pauses", "Speaking without any pauses", "Memorising group phrases"], correct: 1, explanation: "Thought groups are short, meaningful chunks separated by tiny pauses — they make you sound far more fluent and clear than a rushed stream." },
+      { id: 5, question: "Sentence stress means:", options: ["Stressing every single word equally", "Emphasising the important content words to guide the listener", "Speaking in a whisper", "Avoiding emphasis entirely"], correct: 1, explanation: "Stressing the key content words ('I REALLY enjoyed that FILM') sounds natural and helps the listener follow your meaning." }
+    ]
+  },
+  "s-mistakes": {
+    type: "quiz", title: "Common Mistakes & Strategies Quiz",
+    description: "Test your knowledge of pitfalls to avoid and strategies for tricky moments.",
+    questions: [
+      { id: 1, question: "If you don't understand a question, the best response is to:", options: ["Stay silent", "Politely ask the examiner to repeat or rephrase it", "Answer a different question", "Guess wildly and ramble"], correct: 1, explanation: "Asking for clarification ('Could you rephrase that?') is a valid communication skill — just don't do it for every question." },
+      { id: 2, question: "Which is one of the biggest mistakes candidates make?", options: ["Extending their answers", "Giving memorised, scripted answers", "Using examples", "Asking for clarification once"], correct: 1, explanation: "Memorised answers are a top mistake — examiners detect and penalise them because they don't reflect genuine ability." },
+      { id: 3, question: "When you need a moment to think, you should:", options: ["Freeze and say nothing", "Use a natural stalling phrase like 'That's an interesting question...'", "End your answer", "Repeat the question word-for-word"], correct: 1, explanation: "Natural stalling phrases buy thinking time while keeping you fluent — a hallmark of confident high-scorers." },
+      { id: 4, question: "A Part 3 question asks 'Why do people enjoy travelling?' You should answer about:", options: ["Only your own holidays", "People and society in general", "The examiner's travels", "Nothing — it's too abstract"], correct: 1, explanation: "Part 3 is abstract. Discuss people and society in general, not just your personal experience (that's Part 1's style)." },
+      { id: 5, question: "Repeating the examiner's question word-for-word to fill time:", options: ["Is a good fluency strategy", "Is noticed by examiners and wastes your speaking opportunity", "Earns bonus marks", "Is required before answering"], correct: 1, explanation: "Parroting the question wastes time and is noticed. Briefly rephrasing is fine, but get to your developed answer quickly." }
+    ]
+  },
+  "s-band": {
+    type: "quiz", title: "Band Score Quiz",
+    description: "Test your understanding of what each band level requires.",
+    questions: [
+      { id: 1, question: "The leap from Band 6 to Band 7 mainly requires:", options: ["A native accent", "Extended, flexible answers and more frequent error-free speech", "Speaking faster", "Memorising idioms"], correct: 1, explanation: "Band 7 requires speaking at length without noticeable effort, flexible use of connectives, and frequent error-free sentences." },
+      { id: 2, question: "Your overall Speaking band is calculated as:", options: ["The score on Part 2 only", "The average of the four criteria", "The highest single criterion", "Pronunciation alone"], correct: 1, explanation: "The four criteria (Fluency & Coherence, Lexical Resource, Grammar, Pronunciation) are each scored 0–9 and averaged." },
+      { id: 3, question: "A weakness in just one criterion (e.g. pronunciation):", options: ["Has no effect", "Drags down your overall average", "Only matters in Part 1", "Can be ignored"], correct: 1, explanation: "Since the band is an average, a weak criterion lowers your overall score — aim for balance across all four." },
+      { id: 4, question: "At Band 8, errors are:", options: ["Completely absent", "Rare and minor, with the majority of sentences error-free", "Frequent but ignored", "Only allowed in Part 3"], correct: 1, explanation: "Band 8 speakers make only occasional, minor errors, with most sentences error-free — but perfection isn't required." },
+      { id: 5, question: "The best overall mindset for test day is to:", options: ["Treat it as a stressful exam to survive", "Treat it as a friendly conversation and engage naturally", "Speak as little as possible", "Use only memorised material"], correct: 1, explanation: "Treating the test as a genuine conversation — engaged, natural, developed — produces the fluent, confident speech examiners reward." }
+    ]
+  }
+};
+
+// ============================================================
+// SPEECH RECOGNITION HOOK
+// ============================================================
+function useSpeechRecognition() {
+  const [listening, setListening] = useState(false);
+  const [supported, setSupported] = useState(true);
+  const recRef = useRef(null);
+  const finalRef = useRef("");
+
+  useEffect(() => {
+    const SR = typeof window !== "undefined" && (window.SpeechRecognition || window.webkitSpeechRecognition);
+    if (!SR) { setSupported(false); return; }
+    const rec = new SR();
+    rec.continuous = true;
+    rec.interimResults = true;
+    rec.lang = "en-US";
+    recRef.current = rec;
+    return () => { try { rec.stop(); } catch (e) {} };
+  }, []);
+
+  const start = (onUpdate) => {
+    const rec = recRef.current;
+    if (!rec) { setSupported(false); return; }
+    finalRef.current = "";
+    rec.onresult = (event) => {
+      let interim = "";
+      let final = finalRef.current;
+      for (let i = event.resultIndex; i < event.results.length; i++) {
+        const t = event.results[i][0].transcript;
+        if (event.results[i].isFinal) final += t + " ";
+        else interim += t;
+      }
+      finalRef.current = final;
+      onUpdate((final + interim).trim());
+    };
+    rec.onend = () => setListening(false);
+    rec.onerror = () => setListening(false);
+    try { rec.start(); setListening(true); } catch (e) { setListening(false); }
+  };
+  const stop = () => { try { recRef.current && recRef.current.stop(); } catch (e) {} setListening(false); };
+  return { start, stop, listening, supported };
+}
+
+// ============================================================
+// SPEAKING ANSWER INPUT (mic + textarea fallback)
+// ============================================================
+function SpeakingAnswerBox({ value, onChange, color, placeholder }) {
+  const { start, stop, listening, supported } = useSpeechRecognition();
+  return (
+    <div>
+      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
+        {supported ? (
+          !listening ? (
+            <button onClick={() => start(onChange)} style={{ background: color, border: "none", borderRadius: 8, padding: "8px 16px", cursor: "pointer", color: "#000", fontFamily: "sans-serif", fontSize: 13, fontWeight: "bold", display: "flex", alignItems: "center", gap: 6 }}>🎤 Record</button>
+          ) : (
+            <button onClick={stop} style={{ background: "#CF6679", border: "none", borderRadius: 8, padding: "8px 16px", cursor: "pointer", color: "#000", fontFamily: "sans-serif", fontSize: 13, fontWeight: "bold", display: "flex", alignItems: "center", gap: 6 }}>
+              <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#000", display: "inline-block", animation: "pulse 1s infinite" }} />■ Stop Recording
+            </button>
+          )
+        ) : (
+          <span style={{ fontSize: 11, color: "#8A8070", fontFamily: "sans-serif" }}>🎤 Voice input isn't supported here — type your answer instead.</span>
+        )}
+        {listening && <span style={{ fontSize: 12, color: "#CF6679", fontFamily: "sans-serif" }}>Listening...</span>}
+      </div>
+      <textarea
+        value={value}
+        onChange={e => onChange(e.target.value)}
+        placeholder={placeholder || "Speak using the mic, or type your answer here..."}
+        style={{ width: "100%", minHeight: 90, background: "#0F1117", border: "1px solid #2A2D3E", borderRadius: 10, padding: 14, color: "#E8E0D0", fontFamily: "Georgia, serif", fontSize: 14, lineHeight: 1.7, resize: "vertical", outline: "none", boxSizing: "border-box" }}
+      />
+      <style>{`@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }`}</style>
+    </div>
+  );
+}
+
+// ============================================================
+// SPEAKING PRACTICE EXERCISE COMPONENT
+// ============================================================
+function SpeakingPracticeExercise({ exercise, color }) {
+  const [answers, setAnswers] = useState({});
+  const [checked, setChecked] = useState(false);
+  const [revealed, setRevealed] = useState({});
+  const [prepLeft, setPrepLeft] = useState(exercise.prepSeconds || 0);
+  const [prepRunning, setPrepRunning] = useState(false);
+  const prepRef = useRef(null);
+  const { speak, stop, speaking } = useSpeech();
+
+  useEffect(() => {
+    if (prepRunning) {
+      prepRef.current = setInterval(() => setPrepLeft(p => {
+        if (p <= 1) { clearInterval(prepRef.current); setPrepRunning(false); return 0; }
+        return p - 1;
+      }), 1000);
+    }
+    return () => clearInterval(prepRef.current);
+  }, [prepRunning]);
+
+  const setAns = (id, val) => setAnswers(p => ({ ...p, [id]: val }));
+  const score = checked ? exercise.questions.filter(q => parseInt(answers[q.id]) === q.correct).length : 0;
+
+  // QUIZ TYPE
+  if (exercise.type === "quiz") {
+    return (
+      <div style={{ paddingBottom: 20 }}>
+        <div style={{ marginBottom: 18, padding: "12px 16px", background: `${color}15`, borderLeft: `3px solid ${color}`, borderRadius: "0 8px 8px 0" }}>
+          <div style={{ fontSize: 13, fontFamily: "sans-serif", color, fontWeight: "bold", marginBottom: 4 }}>{exercise.title}</div>
+          <div style={{ fontSize: 13, color: "#B0A898" }}>{exercise.description}</div>
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", gap: 14, marginBottom: 16 }}>
+          {exercise.questions.map(q => {
+            const sel = answers[q.id];
+            return (
+              <div key={q.id} style={{ background: "#13161F", border: "1px solid #2A2D3E", borderRadius: 10, padding: 16 }}>
+                <div style={{ fontSize: 14, color: "#E8E0D0", marginBottom: 10, lineHeight: 1.6 }}>
+                  <span style={{ color, fontWeight: "bold", marginRight: 8, fontFamily: "sans-serif" }}>Q{q.id}.</span>{q.question}
+                </div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                  {q.options.map((opt, idx) => {
+                    const isSel = parseInt(sel) === idx;
+                    const isRight = idx === q.correct;
+                    const bg = checked ? (isRight ? "#1A3A1E" : (isSel && !isRight ? "#3A1A1E" : "#0F1117")) : (isSel ? "#1E2040" : "#0F1117");
+                    const bc = checked ? (isRight ? "#5BAF73" : (isSel && !isRight ? "#CF6679" : "#2A2D3E")) : (isSel ? color : "#2A2D3E");
+                    return (
+                      <button key={idx} onClick={() => !checked && setAns(q.id, idx)} style={{ background: bg, border: `1px solid ${bc}`, borderRadius: 7, padding: "9px 14px", cursor: checked ? "default" : "pointer", color: "#C8C0B0", fontFamily: "Georgia, serif", fontSize: 13, textAlign: "left", transition: "all 0.15s" }}>
+                        <span style={{ color, fontWeight: "bold", marginRight: 8 }}>{"ABCD"[idx]}.</span>{opt}
+                        {checked && isRight && <span style={{ color: "#5BAF73", marginLeft: 8, fontSize: 12 }}>✓ Correct</span>}
+                        {checked && isSel && !isRight && <span style={{ color: "#CF6679", marginLeft: 8, fontSize: 12 }}>✗</span>}
+                      </button>
+                    );
+                  })}
+                </div>
+                {checked && <div style={{ fontSize: 12, color: "#8A8070", marginTop: 10, lineHeight: 1.6, borderTop: "1px solid #2A2D3E", paddingTop: 8 }}>💡 {q.explanation}</div>}
+              </div>
+            );
+          })}
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <button onClick={() => setChecked(true)} disabled={checked} style={{ background: checked ? "#1A1D2E" : color, border: "none", borderRadius: 8, padding: "11px 22px", cursor: checked ? "default" : "pointer", color: checked ? "#5A5448" : "#000", fontFamily: "sans-serif", fontSize: 13, fontWeight: "bold" }}>Check Answers</button>
+          {checked && <>
+            <div style={{ fontFamily: "sans-serif", fontSize: 14, color: score === exercise.questions.length ? "#5BAF73" : score >= exercise.questions.length * 0.6 ? "#C8A951" : "#CF6679" }}>Score: {score}/{exercise.questions.length}</div>
+            <button onClick={() => { setAnswers({}); setChecked(false); }} style={{ background: "transparent", border: "1px solid #2A2D3E", borderRadius: 8, padding: "9px 16px", cursor: "pointer", color: "#8A8070", fontFamily: "sans-serif", fontSize: 12 }}>Reset</button>
+          </>}
+        </div>
+      </div>
+    );
+  }
+
+  // SPEAKING TYPE
+  const fmt = (s) => `0:${String(s).padStart(2, "0")}`;
+  return (
+    <div style={{ paddingBottom: 20 }}>
+      <div style={{ marginBottom: 18, padding: "12px 16px", background: `${color}15`, borderLeft: `3px solid ${color}`, borderRadius: "0 8px 8px 0" }}>
+        <div style={{ fontSize: 13, fontFamily: "sans-serif", color, fontWeight: "bold", marginBottom: 4 }}>{exercise.title}</div>
+        <div style={{ fontSize: 13, color: "#B0A898" }}>{exercise.description}</div>
+      </div>
+
+      {/* Cue card (Part 2) */}
+      {exercise.cueCard && (
+        <div style={{ background: "#1A1D2E", border: `2px solid ${color}60`, borderRadius: 12, padding: 20, marginBottom: 16 }}>
+          <div style={{ fontSize: 10, letterSpacing: 2, color, fontFamily: "sans-serif", textTransform: "uppercase", marginBottom: 8 }}>📇 CUE CARD</div>
+          <div style={{ fontSize: 17, fontWeight: "bold", color: "#F0E8D0", marginBottom: 12 }}>{exercise.cueCard.topic}</div>
+          <div style={{ fontSize: 13, color: "#8A8070", marginBottom: 8, fontFamily: "sans-serif" }}>You should say:</div>
+          <ul style={{ margin: 0, paddingLeft: 20 }}>
+            {exercise.cueCard.bullets.map((b, i) => <li key={i} style={{ fontSize: 14, color: "#C8C0B0", lineHeight: 1.7 }}>{b}</li>)}
+          </ul>
+          <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 16, borderTop: "1px solid #2A2D3E", paddingTop: 14 }}>
+            <button onClick={() => { setPrepLeft(exercise.prepSeconds); setPrepRunning(true); }} disabled={prepRunning} style={{ background: prepRunning ? "#1A1D2E" : color, border: prepRunning ? "1px solid #2A2D3E" : "none", borderRadius: 8, padding: "9px 18px", cursor: prepRunning ? "default" : "pointer", color: prepRunning ? "#5A5448" : "#000", fontFamily: "sans-serif", fontSize: 13, fontWeight: "bold" }}>
+              ⏱️ Start 1-min Prep
+            </button>
+            {(prepRunning || prepLeft < exercise.prepSeconds) && (
+              <span style={{ fontFamily: "monospace", fontSize: 20, fontWeight: "bold", color: prepLeft <= 10 ? "#CF6679" : color }}>{fmt(prepLeft)}</span>
+            )}
+            {prepLeft === 0 && !prepRunning && <span style={{ fontSize: 13, color: "#5BAF73", fontFamily: "sans-serif" }}>Prep over — start speaking!</span>}
+          </div>
+        </div>
+      )}
+
+      <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
+        {exercise.questions.map(q => (
+          <div key={q.id} style={{ background: "#13161F", border: "1px solid #2A2D3E", borderRadius: 12, padding: 18 }}>
+            <div style={{ display: "flex", alignItems: "flex-start", gap: 10, marginBottom: 12 }}>
+              <button onClick={() => speak(q.prompt)} title="Hear the question" style={{ background: `${color}22`, border: `1px solid ${color}60`, borderRadius: 6, padding: "5px 9px", cursor: "pointer", color, fontSize: 13, flexShrink: 0 }}>🔊</button>
+              <div style={{ fontSize: 15, color: "#E8E0D0", lineHeight: 1.6, fontStyle: "italic" }}>{q.prompt}</div>
+            </div>
+            <SpeakingAnswerBox value={answers[q.id] || ""} onChange={v => setAns(q.id, v)} color={color} />
+            <div style={{ marginTop: 12 }}>
+              <button onClick={() => setRevealed(r => ({ ...r, [q.id]: !r[q.id] }))} style={{ background: "transparent", border: `1px solid ${color}40`, borderRadius: 8, padding: "8px 14px", cursor: "pointer", color, fontFamily: "sans-serif", fontSize: 12, fontWeight: "bold" }}>
+                {revealed[q.id] ? "Hide model answer" : "💡 Show model answer"}
+              </button>
+              {revealed[q.id] && (
+                <div style={{ marginTop: 12, background: "#1A1D2E", border: "1px solid #2A2D3E", borderRadius: 10, padding: 16 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
+                    <span style={{ fontSize: 10, letterSpacing: 1, color: "#5BAF73", fontFamily: "sans-serif" }}>MODEL ANSWER (Band 7–8)</span>
+                    <button onClick={() => speaking ? stop() : speak(q.model)} style={{ background: "transparent", border: "1px solid #2A2D3E", borderRadius: 6, padding: "3px 8px", cursor: "pointer", color: "#8A8070", fontSize: 11, fontFamily: "sans-serif" }}>{speaking ? "■ Stop" : "🔊 Listen"}</button>
+                  </div>
+                  <p style={{ fontSize: 14, lineHeight: 1.8, color: "#C8C0B0", margin: 0 }}>{q.model}</p>
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+      <div style={{ marginTop: 16, fontSize: 12, color: "#6A6458", fontFamily: "sans-serif", fontStyle: "italic", lineHeight: 1.6 }}>
+        💡 Tip: Record your answer with the mic, read your transcript back, then compare it against the model answer. For full AI band-score feedback on your speaking, take the full Speaking Test.
+      </div>
+    </div>
+  );
+}
+
+// ============================================================
+// SPEAKING STUDY MODE
+// ============================================================
+function SpeakingStudyMode({ onStartTest, onBack }) {
+  const [activeId, setActiveId] = useState("s-overview");
+  const [activeTab, setActiveTab] = useState("learn");
+  const [expandedTip, setExpandedTip] = useState(null);
+  const active = speakingCurriculum.find(c => c.id === activeId);
+  const exercise = speakingExercises[activeId];
+  const selectTopic = (id) => { setActiveId(id); setActiveTab("learn"); setExpandedTip(null); };
+  const idx = speakingCurriculum.findIndex(c => c.id === activeId);
+  return (
+    <div style={{ minHeight: "100vh", background: "#0F1117", fontFamily: "Georgia, serif", color: "#E8E0D0", display: "flex", flexDirection: "column" }}>
+      <div style={{ background: "linear-gradient(135deg, #1A1D2E 0%, #0F1117 100%)", borderBottom: "1px solid #2A2D3E", padding: "20px 28px", display: "flex", alignItems: "center", gap: 16 }}>
+        <div style={{ width: 44, height: 44, borderRadius: 10, background: "linear-gradient(135deg, #E0A030, #A06010)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22, flexShrink: 0 }}>🎙️</div>
+        <div>
+          <div style={{ fontSize: 10, letterSpacing: 3, color: "#E0A030", textTransform: "uppercase", fontFamily: "sans-serif", marginBottom: 2 }}>IELTS MASTERCLASS</div>
+          <div style={{ fontSize: 20, fontWeight: "bold", color: "#F0E8D0", lineHeight: 1 }}>Speaking Module — Complete Guide</div>
+        </div>
+        <div style={{ marginLeft: "auto", display: "flex", gap: 10, alignItems: "center" }}>
+          <button onClick={onBack} style={{ background: "transparent", border: "1px solid #2A2D3E", borderRadius: 8, padding: "9px 16px", cursor: "pointer", color: "#8A8070", fontFamily: "sans-serif", fontSize: 12 }}>← All Modules</button>
+          <button onClick={onStartTest} style={{ background: "linear-gradient(135deg, #E0A030, #A06010)", border: "none", borderRadius: 8, padding: "10px 20px", cursor: "pointer", color: "#000", fontFamily: "sans-serif", fontSize: 13, fontWeight: "bold", letterSpacing: 0.5 }}>🎙️ AI Speaking Test</button>
+        </div>
+      </div>
+      <div style={{ display: "flex", flex: 1, overflow: "hidden" }}>
+        <div style={{ width: 232, background: "#13161F", borderRight: "1px solid #2A2D3E", overflowY: "auto", flexShrink: 0, padding: "10px 0" }}>
+          {speakingCurriculum.map(item => (
+            <button key={item.id} onClick={() => selectTopic(item.id)} style={{ width: "100%", background: activeId === item.id ? `linear-gradient(90deg, ${item.color}22, transparent)` : "transparent", border: "none", borderLeft: activeId === item.id ? `3px solid ${item.color}` : "3px solid transparent", padding: "11px 14px", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, textAlign: "left", transition: "all 0.2s" }}>
+              <span style={{ fontSize: 16, flexShrink: 0 }}>{item.icon}</span>
+              <div>
+                <div style={{ fontSize: 12, color: activeId === item.id ? item.color : "#C8C0B0", fontWeight: activeId === item.id ? "bold" : "normal", fontFamily: "sans-serif", lineHeight: 1.3 }}>{item.title}</div>
+                <div style={{ fontSize: 10, color: "#4A4438", fontFamily: "sans-serif", marginTop: 1 }}>{item.subtitle}</div>
+              </div>
+            </button>
+          ))}
+        </div>
+        <div style={{ flex: 1, overflowY: "auto", padding: "28px" }}>
+          <div style={{ maxWidth: 780, margin: "0 auto" }}>
+            <div style={{ marginBottom: 22 }}>
+              <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: `${active.color}18`, border: `1px solid ${active.color}40`, borderRadius: 6, padding: "5px 12px", marginBottom: 10 }}>
+                <span style={{ fontSize: 16 }}>{active.icon}</span>
+                <span style={{ fontSize: 10, letterSpacing: 2, color: active.color, textTransform: "uppercase", fontFamily: "sans-serif" }}>{active.subtitle}</span>
+              </div>
+              <h1 style={{ fontSize: 28, margin: "0 0 10px", color: "#F0E8D0", lineHeight: 1.2 }}>{active.title}</h1>
+            </div>
+            <div style={{ display: "flex", gap: 4, marginBottom: 22, borderBottom: "1px solid #2A2D3E" }}>
+              {["learn", "practice"].map(tab => (
+                <button key={tab} onClick={() => setActiveTab(tab)} style={{ background: "none", border: "none", borderBottom: activeTab === tab ? `2px solid ${active.color}` : "2px solid transparent", padding: "8px 16px", cursor: "pointer", color: activeTab === tab ? active.color : "#6A6458", fontFamily: "sans-serif", fontSize: 13, fontWeight: activeTab === tab ? "bold" : "normal", textTransform: "capitalize", marginBottom: -1, letterSpacing: 0.5, transition: "all 0.15s" }}>
+                  {tab === "learn" ? "📖 Learn" : "🎙️ Practice"}
+                </button>
+              ))}
+            </div>
+            {activeTab === "learn" && (
+              <div>
+                <p style={{ fontSize: 15, lineHeight: 1.75, color: "#B0A898", margin: "0 0 22px", fontStyle: "italic", borderLeft: `3px solid ${active.color}`, paddingLeft: 14 }}>{active.content.intro}</p>
+                <div style={{ display: "flex", flexDirection: "column", gap: 14, marginBottom: 28 }}>
+                  {active.content.sections.map((s, i) => (
+                    <div key={i} style={{ background: "#1A1D2E", borderRadius: 10, padding: 18, border: "1px solid #2A2D3E" }}>
+                      <div style={{ fontSize: 12, fontWeight: "bold", color: active.color, marginBottom: 7, fontFamily: "sans-serif", letterSpacing: 0.5 }}>{s.heading}</div>
+                      <p style={{ margin: 0, fontSize: 14, lineHeight: 1.75, color: "#C8C0B0" }}>{s.body}</p>
+                    </div>
+                  ))}
+                </div>
+                <div style={{ background: "linear-gradient(135deg, #1E1A10, #1A1D2E)", borderRadius: 12, padding: 22, border: `1px solid ${active.color}40` }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16 }}>
+                    <div style={{ width: 26, height: 26, borderRadius: "50%", background: active.color, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13 }}>💡</div>
+                    <span style={{ fontSize: 13, fontWeight: "bold", color: active.color, fontFamily: "sans-serif", letterSpacing: 1 }}>INSTRUCTOR TIPS & TRICKS</span>
+                  </div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                    {active.content.tips.map((tip, i) => (
+                      <div key={i} onClick={() => setExpandedTip(expandedTip === `${activeId}-${i}` ? null : `${activeId}-${i}`)} style={{ background: expandedTip === `${activeId}-${i}` ? `${active.color}15` : "#0F1117", borderRadius: 8, padding: "10px 14px", cursor: "pointer", border: `1px solid ${expandedTip === `${activeId}-${i}` ? active.color + "60" : "#2A2D3E"}`, transition: "all 0.2s", display: "flex", gap: 10, alignItems: "flex-start" }}>
+                        <div style={{ width: 20, height: 20, borderRadius: "50%", background: active.color, color: "#000", fontSize: 10, fontWeight: "bold", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: 1, fontFamily: "sans-serif" }}>{i + 1}</div>
+                        <span style={{ fontSize: 13, lineHeight: 1.65, color: "#C8C0B0" }}>{tip}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div style={{ display: "flex", justifyContent: "space-between", marginTop: 24, gap: 12 }}>
+                  {idx > 0 && <button onClick={() => selectTopic(speakingCurriculum[idx - 1].id)} style={{ background: "#1A1D2E", border: "1px solid #2A2D3E", borderRadius: 8, padding: "10px 18px", cursor: "pointer", color: "#C8C0B0", fontFamily: "sans-serif", fontSize: 12 }}>← Previous</button>}
+                  <div style={{ flex: 1 }} />
+                  <button onClick={() => setActiveTab("practice")} style={{ background: `${active.color}22`, border: `1px solid ${active.color}60`, borderRadius: 8, padding: "10px 18px", cursor: "pointer", color: active.color, fontFamily: "sans-serif", fontSize: 12, fontWeight: "bold" }}>🎙️ Try Practice Exercise</button>
+                  {idx < speakingCurriculum.length - 1 && <button onClick={() => selectTopic(speakingCurriculum[idx + 1].id)} style={{ background: active.color, border: "none", borderRadius: 8, padding: "10px 18px", cursor: "pointer", color: "#000", fontFamily: "sans-serif", fontSize: 12, fontWeight: "bold" }}>Next →</button>}
+                </div>
+                <div style={{ marginTop: 20 }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 5 }}>
+                    <span style={{ fontSize: 10, color: "#4A4438", fontFamily: "sans-serif", letterSpacing: 1 }}>PROGRESS</span>
+                    <span style={{ fontSize: 10, color: active.color, fontFamily: "sans-serif" }}>{idx + 1} / {speakingCurriculum.length}</span>
+                  </div>
+                  <div style={{ height: 3, background: "#2A2D3E", borderRadius: 3 }}>
+                    <div style={{ height: "100%", borderRadius: 3, background: active.color, width: `${((idx + 1) / speakingCurriculum.length) * 100}%`, transition: "width 0.4s ease" }} />
+                  </div>
+                </div>
+              </div>
+            )}
+            {activeTab === "practice" && exercise && <SpeakingPracticeExercise exercise={exercise} color={active.color} />}
+            {activeTab === "practice" && !exercise && <div style={{ padding: 40, textAlign: "center", color: "#5A5448", fontSize: 14 }}>No practice exercise available for this topic yet.</div>}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ============================================================
+// SPEAKING TEST MODE — AI EVALUATED
+// ============================================================
+const speakingTestData = {
+  part1: [
+    "Let's talk about where you live. Do you live in a house or an apartment, and what do you like about it?",
+    "What do you usually do in the evenings after work or study?",
+    "Do you enjoy spending time outdoors? Why or why not?"
+  ],
+  part2: {
+    topic: "Describe a memorable journey or trip you have taken.",
+    bullets: ["Where you went", "Who you went with", "What you did there", "and explain why it was memorable."],
+    prepSeconds: 60,
+    followUp: "Would you like to take a similar trip again in the future?"
+  },
+  part3: [
+    "Why do you think travel has become so popular in recent decades?",
+    "Do you think tourism always benefits local communities? Why or why not?",
+    "How might the way people travel change in the future?"
+  ]
+};
+
+function SpeakingTestMode({ onExit }) {
+  const [phase, setPhase] = useState("start"); // start | p1 | p2prep | p2 | p3 | evaluating | results
+  const [p1Idx, setP1Idx] = useState(0);
+  const [p3Idx, setP3Idx] = useState(0);
+  const [answers, setAnswers] = useState({}); // keys: p1-0.., p2, p3-0..
+  const [prepLeft, setPrepLeft] = useState(speakingTestData.part2.prepSeconds);
+  const [prepRunning, setPrepRunning] = useState(false);
+  const [results, setResults] = useState(null);
+  const [errMsg, setErrMsg] = useState(null);
+  const prepRef = useRef(null);
+  const { speak, stop: stopSpeak } = useSpeech();
+
+  useEffect(() => {
+    if (prepRunning) {
+      prepRef.current = setInterval(() => setPrepLeft(p => {
+        if (p <= 1) { clearInterval(prepRef.current); setPrepRunning(false); return 0; }
+        return p - 1;
+      }), 1000);
+    }
+    return () => clearInterval(prepRef.current);
+  }, [prepRunning]);
+
+  const setAns = (key, val) => setAnswers(p => ({ ...p, [key]: val }));
+  const fmt = (s) => `0:${String(s).padStart(2, "0")}`;
+
+  const doEval = async () => {
+    stopSpeak();
+    setPhase("evaluating");
+    setErrMsg(null);
+    try {
+      const transcript = [
+        "=== PART 1 ===",
+        ...speakingTestData.part1.map((q, i) => `Examiner: ${q}\nCandidate: ${answers[`p1-${i}`] || "[no answer]"}`),
+        "\n=== PART 2 (Long Turn) ===",
+        `Cue card: ${speakingTestData.part2.topic} (${speakingTestData.part2.bullets.join("; ")})`,
+        `Candidate: ${answers["p2"] || "[no answer]"}`,
+        "\n=== PART 3 (Discussion) ===",
+        ...speakingTestData.part3.map((q, i) => `Examiner: ${q}\nCandidate: ${answers[`p3-${i}`] || "[no answer]"}`)
+      ].join("\n");
+
+      const resp = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "claude-sonnet-4-20250514",
+          max_tokens: 1500,
+          messages: [{
+            role: "user",
+            content: `You are a certified IELTS Speaking examiner. Evaluate this candidate's full speaking test transcript using the official IELTS Speaking band descriptors. The transcript was captured by speech-to-text, so ignore punctuation/capitalisation issues and minor transcription artefacts — assess the language itself. Give realistic scores (most learners score 5.0–7.5), in 0.5 increments. If answers are very short or missing, score lower and note it. Return ONLY valid JSON, no preamble or markdown.
+
+TRANSCRIPT:
+${transcript}
+
+Return EXACTLY this JSON structure:
+{"fluency":6.5,"lexical":6.5,"grammar":6.5,"pronunciation":6.5,"fluencyFeedback":"2-3 specific sentences (note: pronunciation can only be partially judged from text)","lexicalFeedback":"2-3 specific sentences referencing their actual word choices","grammarFeedback":"2-3 specific sentences referencing their actual structures","pronunciationFeedback":"1-2 sentences, acknowledging this is estimated from text only","strengths":["specific strength 1","specific strength 2","specific strength 3"],"improvements":["specific actionable improvement 1","specific actionable improvement 2","specific actionable improvement 3"],"partNotes":{"part1":"1 sentence on Part 1 performance","part2":"1 sentence on the long turn","part3":"1 sentence on the discussion"}}`
+          }]
+        })
+      });
+      const data = await resp.json();
+      const raw = data.content[0].text.replace(/```json|```/g, "").trim();
+      setResults(JSON.parse(raw));
+      setPhase("results");
+    } catch (e) {
+      setErrMsg("Evaluation failed. Please check your connection and try again.");
+      setPhase("p3");
+    }
+  };
+
+  const overall = (r) => Math.round(((r.fluency + r.lexical + r.grammar + r.pronunciation) / 4) * 2) / 2;
+  const bColor = (b) => b >= 7.5 ? "#5BAF73" : b >= 6.5 ? "#C8A951" : b >= 5.5 ? "#B8A47C" : "#CF6679";
+  const ACCENT = "#E0A030";
+
+  // START
+  if (phase === "start") return (
+    <div style={{ minHeight: "100vh", background: "#0F1117", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 40, fontFamily: "Georgia, serif", color: "#E8E0D0" }}>
+      <div style={{ maxWidth: 680, width: "100%" }}>
+        <button onClick={onExit} style={{ background: "transparent", border: "1px solid #2A2D3E", borderRadius: 8, padding: "8px 14px", cursor: "pointer", color: "#8A8070", fontFamily: "sans-serif", fontSize: 12, marginBottom: 32 }}>← Back to Speaking Module</button>
+        <div style={{ textAlign: "center", marginBottom: 28 }}>
+          <div style={{ fontSize: 48, marginBottom: 12 }}>🎙️</div>
+          <div style={{ fontSize: 11, letterSpacing: 3, color: ACCENT, fontFamily: "sans-serif", marginBottom: 8 }}>IELTS SPEAKING</div>
+          <h1 style={{ fontSize: 32, margin: "0 0 10px", color: "#F0E8D0" }}>AI-Evaluated Speaking Test</h1>
+          <p style={{ color: "#8A8070", fontSize: 14, lineHeight: 1.65, margin: 0 }}>A full 3-part mock interview. Speak your answers using the microphone (or type them), then receive detailed AI feedback and band scores on all four criteria.</p>
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 18 }}>
+          {[
+            { n: 1, t: "Introduction & Interview", d: "3 questions on familiar topics" },
+            { n: 2, t: "The Long Turn", d: "Cue card with 1-minute preparation" },
+            { n: 3, t: "Discussion", d: "3 abstract follow-up questions" }
+          ].map(p => (
+            <div key={p.n} style={{ background: "#1A1D2E", border: `1px solid ${ACCENT}30`, borderRadius: 10, padding: 14, display: "flex", alignItems: "center", gap: 14 }}>
+              <div style={{ width: 30, height: 30, borderRadius: "50%", background: `${ACCENT}22`, border: `1px solid ${ACCENT}`, color: ACCENT, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "sans-serif", fontWeight: "bold", fontSize: 14, flexShrink: 0 }}>{p.n}</div>
+              <div>
+                <div style={{ fontSize: 14, fontWeight: "bold", color: "#F0E8D0", fontFamily: "sans-serif" }}>Part {p.n}: {p.t}</div>
+                <div style={{ fontSize: 12, color: "#6A6458" }}>{p.d}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div style={{ background: "#1E1A10", border: `1px solid ${ACCENT}40`, borderRadius: 10, padding: "12px 16px", marginBottom: 22 }}>
+          <span style={{ fontSize: 12, color: ACCENT, fontFamily: "sans-serif", lineHeight: 1.6 }}>🎤 Tap "Record" to speak — your words are transcribed live. You can edit the transcript before submitting. Note: pronunciation can only be partially assessed from a text transcript.</span>
+        </div>
+        <button onClick={() => { setPhase("p1"); speak(speakingTestData.part1[0]); }} style={{ width: "100%", background: `linear-gradient(135deg, ${ACCENT}, #A06010)`, border: "none", borderRadius: 10, padding: 16, cursor: "pointer", color: "#000", fontFamily: "sans-serif", fontSize: 16, fontWeight: "bold" }}>Begin Speaking Test →</button>
+      </div>
+    </div>
+  );
+
+  // EVALUATING
+  if (phase === "evaluating") return (
+    <div style={{ minHeight: "100vh", background: "#0F1117", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontFamily: "Georgia, serif", color: "#E8E0D0" }}>
+      <div style={{ textAlign: "center" }}>
+        <div style={{ fontSize: 52, marginBottom: 20 }}>🎙️</div>
+        <div style={{ fontSize: 11, letterSpacing: 3, color: ACCENT, fontFamily: "sans-serif", marginBottom: 8 }}>IELTS AI EXAMINER</div>
+        <h2 style={{ fontSize: 26, margin: "0 0 10px", color: "#F0E8D0" }}>Assessing Your Speaking...</h2>
+        <p style={{ color: "#8A8070", fontSize: 14 }}>Evaluating fluency, vocabulary, grammar and pronunciation. This takes 15–30 seconds.</p>
+        {errMsg && <div style={{ color: "#CF6679", marginTop: 16, fontSize: 14 }}>{errMsg}</div>}
+      </div>
+    </div>
+  );
+
+  // RESULTS
+  if (phase === "results" && results) {
+    const ob = overall(results);
+    const criteria = [
+      { label: "Fluency & Coherence", score: results.fluency, fb: results.fluencyFeedback },
+      { label: "Lexical Resource", score: results.lexical, fb: results.lexicalFeedback },
+      { label: "Grammatical Range", score: results.grammar, fb: results.grammarFeedback },
+      { label: "Pronunciation*", score: results.pronunciation, fb: results.pronunciationFeedback }
+    ];
+    return (
+      <div style={{ minHeight: "100vh", background: "#0F1117", fontFamily: "Georgia, serif", color: "#E8E0D0" }}>
+        <div style={{ background: "#13161F", borderBottom: "1px solid #2A2D3E", padding: "14px 28px", display: "flex", alignItems: "center", gap: 12 }}>
+          <button onClick={onExit} style={{ background: "transparent", border: "1px solid #2A2D3E", borderRadius: 8, padding: "8px 14px", cursor: "pointer", color: "#8A8070", fontFamily: "sans-serif", fontSize: 12 }}>← Speaking Module</button>
+          <span style={{ fontSize: 16, fontWeight: "bold", color: "#F0E8D0" }}>AI Examiner Feedback</span>
+        </div>
+        <div style={{ maxWidth: 860, margin: "0 auto", padding: 28 }}>
+          <div style={{ background: "linear-gradient(135deg, #1A1D2E, #13161F)", border: `2px solid ${bColor(ob)}40`, borderRadius: 16, padding: 28, textAlign: "center", marginBottom: 24 }}>
+            <div style={{ fontSize: 11, letterSpacing: 3, color: bColor(ob), fontFamily: "sans-serif", marginBottom: 6 }}>OVERALL ESTIMATED BAND</div>
+            <div style={{ fontSize: 68, fontWeight: "bold", color: bColor(ob), lineHeight: 1 }}>{ob.toFixed(1)}</div>
+            <div style={{ fontSize: 13, color: "#8A8070", marginTop: 6, fontFamily: "sans-serif" }}>Average of the four criteria below</div>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 22 }}>
+            {criteria.map(c => (
+              <div key={c.label} style={{ background: "#13161F", border: "1px solid #2A2D3E", borderRadius: 12, padding: 16 }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
+                  <span style={{ fontSize: 12, color: "#8A8070", fontFamily: "sans-serif" }}>{c.label}</span>
+                  <span style={{ fontSize: 22, fontWeight: "bold", color: bColor(c.score) }}>{c.score.toFixed(1)}</span>
+                </div>
+                <div style={{ height: 5, background: "#0F1117", borderRadius: 3, marginBottom: 10 }}>
+                  <div style={{ height: "100%", borderRadius: 3, background: bColor(c.score), width: `${(c.score / 9) * 100}%` }} />
+                </div>
+                <p style={{ fontSize: 12.5, color: "#B0A898", lineHeight: 1.6, margin: 0 }}>{c.fb}</p>
+              </div>
+            ))}
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 22 }}>
+            <div style={{ background: "#0F1117", border: "1px solid #5BAF7330", borderRadius: 12, padding: 16 }}>
+              <div style={{ fontSize: 11, letterSpacing: 1, color: "#5BAF73", fontFamily: "sans-serif", marginBottom: 10 }}>✓ STRENGTHS</div>
+              {results.strengths.map((s, i) => <div key={i} style={{ fontSize: 12.5, color: "#B0A898", lineHeight: 1.6, padding: "5px 0", borderBottom: i < results.strengths.length - 1 ? "1px solid #1A1D2E" : "none" }}>{s}</div>)}
+            </div>
+            <div style={{ background: "#0F1117", border: "1px solid #CF667930", borderRadius: 12, padding: 16 }}>
+              <div style={{ fontSize: 11, letterSpacing: 1, color: "#CF6679", fontFamily: "sans-serif", marginBottom: 10 }}>↗ AREAS TO IMPROVE</div>
+              {results.improvements.map((s, i) => <div key={i} style={{ fontSize: 12.5, color: "#B0A898", lineHeight: 1.6, padding: "5px 0", borderBottom: i < results.improvements.length - 1 ? "1px solid #1A1D2E" : "none" }}>{s}</div>)}
+            </div>
+          </div>
+          {results.partNotes && (
+            <div style={{ background: "#13161F", border: "1px solid #2A2D3E", borderRadius: 12, padding: 18, marginBottom: 22 }}>
+              <div style={{ fontSize: 11, letterSpacing: 1, color: ACCENT, fontFamily: "sans-serif", marginBottom: 12 }}>PART-BY-PART NOTES</div>
+              {[["Part 1", results.partNotes.part1], ["Part 2", results.partNotes.part2], ["Part 3", results.partNotes.part3]].map(([label, note]) => (
+                <div key={label} style={{ fontSize: 13, color: "#B0A898", marginBottom: 8, lineHeight: 1.6 }}><span style={{ color: ACCENT, fontWeight: "bold" }}>{label}: </span>{note}</div>
+              ))}
+            </div>
+          )}
+          <div style={{ fontSize: 11, color: "#5A5448", fontStyle: "italic", marginBottom: 20, lineHeight: 1.6 }}>* Pronunciation is estimated from the text transcript only and cannot fully capture stress, rhythm, and intonation. For accurate pronunciation feedback, practise with a teacher or record and listen back to yourself.</div>
+          <div style={{ display: "flex", gap: 12, justifyContent: "center" }}>
+            <button onClick={() => { setPhase("start"); setAnswers({}); setP1Idx(0); setP3Idx(0); setResults(null); setPrepLeft(speakingTestData.part2.prepSeconds); }} style={{ background: "#1A1D2E", border: "1px solid #2A2D3E", borderRadius: 10, padding: "12px 28px", cursor: "pointer", color: "#C8C0B0", fontFamily: "sans-serif", fontSize: 13 }}>Retake Test</button>
+            <button onClick={onExit} style={{ background: `linear-gradient(135deg, ${ACCENT}, #A06010)`, border: "none", borderRadius: 10, padding: "12px 28px", cursor: "pointer", color: "#000", fontFamily: "sans-serif", fontSize: 13, fontWeight: "bold" }}>Back to Module</button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // INTERVIEW PHASES (p1, p2prep, p2, p3) — shared shell.
+  // NOTE: these are render-helper FUNCTIONS that are CALLED inline, not used as
+  // JSX component elements. This is deliberate: defining them as nested components
+  // and rendering <Shell/> would give them a new identity on every keystroke,
+  // remounting SpeakingAnswerBox and resetting the mic/transcript. Calling them
+  // keeps the subtree stable across re-renders.
+  const renderShell = ({ partLabel, partNum, children, onNext, nextLabel, canNext = true }) => (
+    <div style={{ minHeight: "100vh", background: "#0F1117", fontFamily: "Georgia, serif", color: "#E8E0D0", display: "flex", flexDirection: "column" }}>
+      <div style={{ background: "#13161F", borderBottom: "1px solid #2A2D3E", padding: "12px 24px", display: "flex", alignItems: "center", gap: 12 }}>
+        <div style={{ display: "flex", gap: 6 }}>
+          {[1, 2, 3].map(n => (
+            <div key={n} style={{ width: 26, height: 26, borderRadius: "50%", background: partNum === n ? `${ACCENT}22` : "transparent", border: `1px solid ${partNum === n ? ACCENT : "#2A2D3E"}`, color: partNum === n ? ACCENT : "#5A5448", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "sans-serif", fontSize: 12, fontWeight: "bold" }}>{n}</div>
+          ))}
+        </div>
+        <span style={{ fontSize: 13, color: "#8A8070", fontFamily: "sans-serif" }}>{partLabel}</span>
+        <button onClick={() => { stopSpeak(); doEval(); }} style={{ marginLeft: "auto", background: "transparent", border: "1px solid #2A2D3E", borderRadius: 8, padding: "7px 14px", cursor: "pointer", color: "#8A8070", fontFamily: "sans-serif", fontSize: 12 }}>End & Evaluate</button>
+      </div>
+      {errMsg && <div style={{ background: "#3A1A1E", borderBottom: "1px solid #CF6679", padding: "8px 24px", fontSize: 13, color: "#CF6679", fontFamily: "sans-serif" }}>{errMsg}</div>}
+      <div style={{ flex: 1, overflowY: "auto", padding: 28 }}>
+        <div style={{ maxWidth: 680, margin: "0 auto" }}>
+          {children}
+          {onNext && (
+            <div style={{ display: "flex", justifyContent: "flex-end", marginTop: 22 }}>
+              <button onClick={onNext} disabled={!canNext} style={{ background: canNext ? `linear-gradient(135deg, ${ACCENT}, #A06010)` : "#1A1D2E", border: canNext ? "none" : "1px solid #2A2D3E", borderRadius: 10, padding: "12px 26px", cursor: canNext ? "pointer" : "default", color: canNext ? "#000" : "#5A5448", fontFamily: "sans-serif", fontSize: 14, fontWeight: "bold" }}>{nextLabel}</button>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderQuestionCard = ({ q, val, onVal }) => (
+    <div style={{ background: "#13161F", border: "1px solid #2A2D3E", borderRadius: 12, padding: 20, marginBottom: 16 }}>
+      <div style={{ display: "flex", alignItems: "flex-start", gap: 12, marginBottom: 14 }}>
+        <button onClick={() => speak(q)} title="Hear question" style={{ background: `${ACCENT}22`, border: `1px solid ${ACCENT}60`, borderRadius: 8, padding: "7px 11px", cursor: "pointer", color: ACCENT, fontSize: 15, flexShrink: 0 }}>🔊</button>
+        <div>
+          <div style={{ fontSize: 10, letterSpacing: 1, color: "#6A6458", fontFamily: "sans-serif", marginBottom: 4 }}>EXAMINER</div>
+          <div style={{ fontSize: 16, color: "#E8E0D0", lineHeight: 1.6 }}>{q}</div>
+        </div>
+      </div>
+      <SpeakingAnswerBox value={val} onChange={onVal} color={ACCENT} />
+    </div>
+  );
+
+  // PART 1
+  if (phase === "p1") {
+    const q = speakingTestData.part1[p1Idx];
+    const last = p1Idx === speakingTestData.part1.length - 1;
+    return renderShell({
+      partLabel: `Part 1 · Question ${p1Idx + 1} of ${speakingTestData.part1.length}`,
+      partNum: 1,
+      onNext: () => {
+        if (last) { setPhase("p2prep"); }
+        else { const ni = p1Idx + 1; setP1Idx(ni); speak(speakingTestData.part1[ni]); }
+      },
+      nextLabel: last ? "Continue to Part 2 →" : "Next Question →",
+      children: renderQuestionCard({ q, val: answers[`p1-${p1Idx}`] || "", onVal: v => setAns(`p1-${p1Idx}`, v) })
+    });
+  }
+
+  // PART 2 PREP
+  if (phase === "p2prep") {
+    return renderShell({
+      partLabel: "Part 2 · Preparation",
+      partNum: 2,
+      onNext: () => { setPhase("p2"); },
+      nextLabel: "I'm ready — start speaking →",
+      children: (
+        <>
+          <div style={{ background: "#1A1D2E", border: `2px solid ${ACCENT}60`, borderRadius: 12, padding: 22, marginBottom: 18 }}>
+            <div style={{ fontSize: 10, letterSpacing: 2, color: ACCENT, fontFamily: "sans-serif", textTransform: "uppercase", marginBottom: 10 }}>📇 CUE CARD</div>
+            <div style={{ fontSize: 19, fontWeight: "bold", color: "#F0E8D0", marginBottom: 14 }}>{speakingTestData.part2.topic}</div>
+            <div style={{ fontSize: 13, color: "#8A8070", marginBottom: 8, fontFamily: "sans-serif" }}>You should say:</div>
+            <ul style={{ margin: 0, paddingLeft: 22 }}>
+              {speakingTestData.part2.bullets.map((b, i) => <li key={i} style={{ fontSize: 15, color: "#C8C0B0", lineHeight: 1.8 }}>{b}</li>)}
+            </ul>
+          </div>
+          <div style={{ background: "#13161F", border: "1px solid #2A2D3E", borderRadius: 12, padding: 20, textAlign: "center" }}>
+            <div style={{ fontSize: 13, color: "#8A8070", fontFamily: "sans-serif", marginBottom: 12 }}>You have 1 minute to prepare. Make mental notes, then begin.</div>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 16 }}>
+              <button onClick={() => { setPrepLeft(speakingTestData.part2.prepSeconds); setPrepRunning(true); }} disabled={prepRunning} style={{ background: prepRunning ? "#1A1D2E" : ACCENT, border: prepRunning ? "1px solid #2A2D3E" : "none", borderRadius: 8, padding: "10px 20px", cursor: prepRunning ? "default" : "pointer", color: prepRunning ? "#5A5448" : "#000", fontFamily: "sans-serif", fontSize: 13, fontWeight: "bold" }}>⏱️ Start Prep Timer</button>
+              <span style={{ fontFamily: "monospace", fontSize: 32, fontWeight: "bold", color: prepLeft <= 10 ? "#CF6679" : ACCENT }}>{fmt(prepLeft)}</span>
+            </div>
+          </div>
+        </>
+      )
+    });
+  }
+
+  // PART 2 SPEAK
+  if (phase === "p2") {
+    return renderShell({
+      partLabel: "Part 2 · The Long Turn",
+      partNum: 2,
+      onNext: () => { setPhase("p3"); setP3Idx(0); speak(speakingTestData.part3[0]); },
+      nextLabel: "Continue to Part 3 →",
+      canNext: (answers["p2"] || "").trim().length > 0,
+      children: (
+        <>
+          <div style={{ background: "#1A1D2E", border: `1px solid ${ACCENT}40`, borderRadius: 12, padding: 18, marginBottom: 16 }}>
+            <div style={{ fontSize: 10, letterSpacing: 2, color: ACCENT, fontFamily: "sans-serif", textTransform: "uppercase", marginBottom: 6 }}>📇 SPEAK ABOUT</div>
+            <div style={{ fontSize: 16, fontWeight: "bold", color: "#F0E8D0", marginBottom: 8 }}>{speakingTestData.part2.topic}</div>
+            <ul style={{ margin: 0, paddingLeft: 20 }}>
+              {speakingTestData.part2.bullets.map((b, i) => <li key={i} style={{ fontSize: 13, color: "#B0A898", lineHeight: 1.6 }}>{b}</li>)}
+            </ul>
+          </div>
+          <div style={{ fontSize: 13, color: "#8A8070", fontFamily: "sans-serif", marginBottom: 10 }}>🎤 Speak for 1–2 minutes. Record your long turn below:</div>
+          <SpeakingAnswerBox value={answers["p2"] || ""} onChange={v => setAns("p2", v)} color={ACCENT} placeholder="Record or type your 1–2 minute long turn here..." />
+        </>
+      )
+    });
+  }
+
+  // PART 3
+  if (phase === "p3") {
+    const q = speakingTestData.part3[p3Idx];
+    const last = p3Idx === speakingTestData.part3.length - 1;
+    return renderShell({
+      partLabel: `Part 3 · Question ${p3Idx + 1} of ${speakingTestData.part3.length}`,
+      partNum: 3,
+      onNext: () => {
+        if (last) { doEval(); }
+        else { const ni = p3Idx + 1; setP3Idx(ni); speak(speakingTestData.part3[ni]); }
+      },
+      nextLabel: last ? "Finish & Get AI Feedback →" : "Next Question →",
+      children: renderQuestionCard({ q, val: answers[`p3-${p3Idx}`] || "", onVal: v => setAns(`p3-${p3Idx}`, v) })
+    });
+  }
+
+  return null;
+}
+
 // ============================================================
 // HOME SCREEN
 // ============================================================
 function HomeScreen({ onSelect }) {
   const modules = [
     { id: "reading", icon: "📖", title: "Reading", color: "#5B8DB8", badge: "11 topics · 60-min timed test", detail: "True/False/Not Given, Matching Headings, Sentence Completion, MCQs, Short Answer & more. Full Academic Reading Test with 40 questions." },
-    { id: "writing", icon: "✍️", title: "Writing", color: "#7CB87C", badge: "10 topics · AI-evaluated test", detail: "Task 1 Academic, Task 1 GT Letters, Task 2 Essay Types, Coherence, Grammar, Vocabulary. AI-powered band scoring with detailed feedback." }
+    { id: "writing", icon: "✍️", title: "Writing", color: "#7CB87C", badge: "9 topics · AI-evaluated test", detail: "Academic Task 1 (graphs & charts), Task 2 essay types, structure, arguments, coherence, vocabulary & grammar. AI-powered band scoring with detailed feedback on all four criteria." },
+    { id: "listening", icon: "🎧", title: "Listening", color: "#B87CB8", badge: "11 topics · 40-question audio test", detail: "Form completion, multiple choice, matching, map labelling, sentence completion & more. Full 4-part test with browser-narrated audio and instant band scoring." },
+    { id: "speaking", icon: "🎙️", title: "Speaking", color: "#E0A030", badge: "10 topics · AI-evaluated interview", detail: "All three parts, the four assessment criteria, fluency, vocabulary, grammar & pronunciation. Speak your answers aloud and get AI band scores with detailed feedback." }
   ];
   return (
     <div style={{ minHeight: "100vh", background: "#0F1117", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 40, fontFamily: "Georgia, serif" }}>
@@ -2111,9 +4012,9 @@ function HomeScreen({ onSelect }) {
         <h1 style={{ fontSize: 42, color: "#F0E8D0", margin: 0 }}>Choose Your Module</h1>
         <p style={{ color: "#6A6458", marginTop: 10, fontSize: 16, fontFamily: "sans-serif" }}>Select a module to begin your IELTS preparation</p>
       </div>
-      <div style={{ display: "flex", gap: 24, maxWidth: 820, width: "100%" }}>
+      <div style={{ display: "flex", gap: 20, maxWidth: 1080, width: "100%", flexWrap: "wrap", justifyContent: "center" }}>
         {modules.map(m => (
-          <div key={m.id} onClick={() => onSelect(m.id)} style={{ background: "linear-gradient(135deg, #1A1D2E, #13161F)", border: `1px solid ${m.color}40`, borderRadius: 16, padding: 36, cursor: "pointer", flex: 1, transition: "transform 0.15s, border-color 0.15s" }}
+          <div key={m.id} onClick={() => onSelect(m.id)} style={{ background: "linear-gradient(135deg, #1A1D2E, #13161F)", border: `1px solid ${m.color}40`, borderRadius: 16, padding: 32, cursor: "pointer", flex: "1 1 300px", minWidth: 280, maxWidth: 340, transition: "transform 0.15s, border-color 0.15s" }}
             onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-4px)"; e.currentTarget.style.borderColor = m.color + "90"; }}
             onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.borderColor = m.color + "40"; }}>
             <div style={{ fontSize: 44, marginBottom: 14 }}>{m.icon}</div>
@@ -2146,6 +4047,14 @@ export default function App() {
   if (module === "writing") {
     if (mode === "test") return <WritingTestMode onExit={() => setMode("study")} />;
     return <WritingStudyMode onStartTest={() => setMode("test")} onBack={goHome} />;
+  }
+  if (module === "listening") {
+    if (mode === "test") return <ListeningTestMode onExit={() => setMode("study")} />;
+    return <ListeningStudyMode onStartTest={() => setMode("test")} onBack={goHome} />;
+  }
+  if (module === "speaking") {
+    if (mode === "test") return <SpeakingTestMode onExit={() => setMode("study")} />;
+    return <SpeakingStudyMode onStartTest={() => setMode("test")} onBack={goHome} />;
   }
   return <HomeScreen onSelect={(m) => { setModule(m); setMode("study"); }} />;
 }
